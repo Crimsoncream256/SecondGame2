@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8386924840f29ad49b71eef6d0053010
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - XButton: {instanceID: 0}
+  - audiO: {instanceID: 0}
+  - Tada: {fileID: 8300000, guid: 02df584ee64d6614c9bd52886ebb8a77, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

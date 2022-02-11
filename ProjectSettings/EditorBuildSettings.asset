@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/#Next/20211130/Scenes/3tenLight.unity
+    guid: eca9c4defefb99648bc2c4017ccdaa79
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Sonota/Asobi02.unity
+    guid: 1cf15a93554e44c4f95c204f20b25c60
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Boss1.unity
+    guid: 1788c3ebdce388f48a77c538d87c2404
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Boss2.unity
+    guid: b8a54021b92c4b94aab504c8b52c14ab
+  - enabled: 1
+    path: Assets/#Next/U1C1/Challenge 1/Challenge 1.unity
+    guid: b6cc3e14dbc3342c8ab192babf679766
+  - enabled: 1
+    path: Assets/#Next/U2C2/Challenge 2/Challenge 2.unity
+    guid: f695fe0c51d8449d2b49648dad174255
+  - enabled: 1
+    path: Assets/#Next/U3C3/Challenge 3/Challenge 3.unity
+    guid: 8a1fabfaac7e04af29dc3664bfd4f100
+  - enabled: 1
+    path: Assets/#Next/U4C4/Challenge 4/Challenge 4.unity
+    guid: bafab91dee6434fbcb28a5a16e78982f
+  - enabled: 1
+    path: Assets/#Next/U5C5/Challenge 5/Challenge 5.unity
+    guid: 2c85e4f6638394ea8b8154a3b832357b
+  - enabled: 1
+    path: Assets/#Next/20211130/Scenes/Debug.unity
+    guid: c1d55d384f0a210448020587d6d6b45d
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Sonota/Firstscene.unity
+    guid: 1e5bec33fc0314c4f8417ec1024b7d3c
+  - enabled: 1
+    path: Assets/#Next/GaleemKarinF/Scenes/GaleemKarinScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/#Next/GaleemKarinF/Scenes/KidScene.unity
+    guid: e221f041637a6db458e584448ab5f584
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Main.unity
+    guid: 163adec682b5ccd4c8dbb7766c20f3fb
+  - enabled: 1
+    path: Assets/#Next/U1C1/Scenes1/Prototype 1.unity
+    guid: 84729eeda748340d0955715b6a50b370
+  - enabled: 1
+    path: Assets/#Next/U2C2/Scenes2/Prototype 2.unity
+    guid: f0196d95ff9244ffaa65879ba7824fd4
+  - enabled: 1
+    path: Assets/#Next/U3C3/Scenes3/Prototype 3.unity
+    guid: dc8c9f3efd746429fa6f9482dc779492
+  - enabled: 1
+    path: Assets/#Next/U4C4/Scenes4/Prototype 4.unity
+    guid: a4b96ad7a65484fd4a83cb97540eee50
+  - enabled: 1
+    path: Assets/#Next/U5C5/Scenes5/Prototype 5.unity
+    guid: a4889de53e6562245a2ca7a3ab363688
+  - enabled: 1
+    path: Assets/#Next/DefaultFolder/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Seclet1.unity
+    guid: 23e6280e4291991418c1bc17ad42411f
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Sonota/Secondscene.unity
+    guid: 4e4c3e3c39f735b47bf4da8939693def
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Section5_2.unity
+    guid: f15bfa59c55876f4c986d096c6a37383
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Section5_3Continue.unity
+    guid: 3dc8caa508ec7fb49a8b3710fcb79969
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Section5_4Settings.unity
+    guid: 23a832c20e55b164c8b3b2bff6d1a16e
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Section5_5Credits.unity
+    guid: d947c01e2857db641b379ce25a39a4c4
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Sonota/Section6_Pinball.unity
+    guid: c98163dffdc185d41a5c5e2519c1d1ff
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Stage1.unity
+    guid: b9b9fbb875b25914985b334a1852cf21
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Stage2.unity
+    guid: 8e150e6741fabb84e8bf52984c8be3cc
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Stage3.unity
+    guid: 85839daf81c80e445a364b279c4fd148
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/Stage4.unity
+    guid: 22d4853cec089c84295ef1e5dcdde777
+  - enabled: 1
+    path: Assets/#Next/20210427/Scenes/TestOlesama.unity
+    guid: c5be6e7893494764eba51c5189f761b5
+  - enabled: 1
+    path: Assets/#Next/20211130/Scenes/WithEnemies.unity
+    guid: 995c0c7513c8f8947bcfdd261509105d
+  - enabled: 1
+    path: Assets/#Next/20211130/Scenes/WithItems.unity
+    guid: 73b6b7ee2bd2bb0488620e29368f9518
+  - enabled: 1
+    path: Assets/#Next/20211130/Scenes/WithRivals.unity
+    guid: 6eda0ef8ed73c284783ed71196931527
+  - enabled: 1
+    path: Assets/#Next/20211130/9t5 PBR Textures Pack Freebies/Scenes/Demo Freebies.unity
+    guid: 2d0e8bef6a59eb14a9e14305c5a2df02
+  m_configObjects: {}

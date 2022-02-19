@@ -9,7 +9,7 @@ public class BossManager : MonoBehaviour
     public int BossLife;  //この回数分プレイヤーの弾を当てたら動きが止まってゲームクリア   これGameManagerに入れた方がよくないか
     //public string BossNokori;//文字列  これGameManagerに入れた方がよくないか
 
-    public GameManager gameManager; //なんか変数とか使いそうだから呼んどいた
+    public GameManager0427 gameManager; //なんか変数とか使いそうだから呼んどいた
     public float speed = 4f; //動かすため
     public GameObject BlazingBallPrefab;//炎玉のプレハブ
 
@@ -89,9 +89,9 @@ public class BossManager : MonoBehaviour
             SetNokoriText(BossLife);
             Debug.Log("あたった！");
             GameObject gm = GameObject.Find("GOD");
-            gm.GetComponent<GameManager>().AddScore(scorepointBc);
+            gm.GetComponent<GameManager0427>().AddScore(scorepointBc);
             GameObject gmO = GameObject.Find("GOD");
-            gmO.GetComponent<GameManager>().AddBroken(Brokenc);
+            gmO.GetComponent<GameManager0427>().AddBroken(Brokenc);
             audio.PlayOneShot(Damage);
             if (BossLife <= 0)
             {
@@ -103,18 +103,18 @@ public class BossManager : MonoBehaviour
                 //のと同じような動作をする(?!)
 
                 GameObject gmE = GameObject.Find("GOD");
-                gmE.GetComponent<GameManager>().AddScore(scorepointB);
+                gmE.GetComponent<GameManager0427>().AddScore(scorepointB);
                 GameObject gmBE = GameObject.Find("GOD");
-                gmBE.GetComponent<GameManager>().AddBroken(Broken);
+                gmBE.GetComponent<GameManager0427>().AddBroken(Broken);
 
                 GameObject[] cubes = GameObject.FindGameObjectsWithTag("KABE");
                 foreach (GameObject cube in cubes)
                 {
                     Destroy(cube);
                     GameObject gmB = GameObject.Find("GOD");
-                    gmB.GetComponent<GameManager>().AddScore(scorepointBc);
+                    gmB.GetComponent<GameManager0427>().AddScore(scorepointBc);
                     GameObject gmBB = GameObject.Find("GOD");
-                    gmBB.GetComponent<GameManager>().AddBroken(Brokenc);
+                    gmBB.GetComponent<GameManager0427>().AddBroken(Brokenc);
                     Debug.Log("どっかーん！");
                 }
                 Destroy(gameObject);

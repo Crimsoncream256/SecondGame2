@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/#Next/JsonClicker/TestClickerScene.unity
+    guid: 0ec391c1920789e4abc2d820d9cb1acd
+  - enabled: 1
     path: Assets/#Next/20211130/Scenes/3tenLight.unity
     guid: eca9c4defefb99648bc2c4017ccdaa79
   - enabled: 1

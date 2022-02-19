@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bounce : MonoBehaviour
 {
 
-    public GameManager gameManager;
+    public GameManager0427 gameManager;
 
     private new AudioSource audio;
     public AudioClip StoneBreaking;

@@ -29,9 +29,9 @@ public class Chibi_Broken : MonoBehaviour
             GetComponent<Transform>().localScale =
 new Vector3(0.1f, 0.1f, 0.1f);
             GameObject gm = GameObject.Find("GOD");
-            gm.GetComponent<GameManager>().AddScore(scorepointB);
+            gm.GetComponent<GameManager0427>().AddScore(scorepointB);
              GameObject gmB = GameObject.Find("GOD");
-            gmB.GetComponent<GameManager>().AddBroken(Broken);
+            gmB.GetComponent<GameManager0427>().AddBroken(Broken);
 
 
             audio.PlayOneShot(StoneBreaking);
@@ -43,9 +43,9 @@ new Vector3(0.1f, 0.1f, 0.1f);
             GetComponent<Transform>().localScale =
 new Vector3(0.1f, 0.1f, 0.1f);
             GameObject gm = GameObject.Find("GOD");
-            gm.GetComponent<GameManager>().AddScore(scorepointB);
+            gm.GetComponent<GameManager0427>().AddScore(scorepointB);
             GameObject gmB = GameObject.Find("GOD");
-            gmB.GetComponent<GameManager>().AddBroken(Broken);
+            gmB.GetComponent<GameManager0427>().AddBroken(Broken);
 
 
             audio.PlayOneShot(StoneBreaking);
@@ -60,10 +60,10 @@ new Vector3(0.1f, 0.1f, 0.1f);
                        Debug.Log(this.gameObject.name);
 
             GameObject gm = GameObject.Find("GOD");
-            gm.GetComponent<GameManager>().AddScore(scorepointF);
+            gm.GetComponent<GameManager0427>().AddScore(scorepointF);
 
             GameObject gmF = GameObject.Find("GOD");
-            gmF.GetComponent<GameManager>().AddFallen(Fallen);
+            gmF.GetComponent<GameManager0427>().AddFallen(Fallen);
             
 
             Destroy(this.gameObject);

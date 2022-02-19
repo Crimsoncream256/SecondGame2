@@ -6,7 +6,7 @@ public class BlazingBall : MonoBehaviour
 {
     public new AudioSource audio;
     public AudioClip Gusha;
-    public GameManager gameManager;
+    public GameManager0427 gameManager;
     void Start()
     {
         audio = gameObject.AddComponent<AudioSource>();
@@ -21,19 +21,13 @@ public class BlazingBall : MonoBehaviour
              audio.PlayOneShot(Gusha);
             //ここでGameManagerのlifeを1減らす
             GameObject gm = GameObject.Find("GOD");
-            gm.GetComponent<GameManager>().BallDelete();
+            gm.GetComponent<GameManager0427>().BallDelete();
             //--gameManager.life;
             Debug.Log("あつい！");//当てたらちゃんと出てきました
             GameObject gm2 = GameObject.Find("GOD");
-            gm2.GetComponent<GameManager>().check("Ball");
+            gm2.GetComponent<GameManager0427>().check("Ball");
             Destroy(gameObject);
         }
-    }
-
-
-    void Update()
-    {
-        
     }
 }
 

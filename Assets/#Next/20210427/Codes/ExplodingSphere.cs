@@ -7,7 +7,7 @@ public class ExplodingSphere : MonoBehaviour
     private new AudioSource audio;
     public AudioClip Explode;
 
-    public GameManager gameManager;
+    public GameManager0427 gameManager;
 
     public int scorepointB = 200;
     public int Broken = 10;
@@ -30,9 +30,9 @@ public class ExplodingSphere : MonoBehaviour
         {
             GetComponent<Renderer>().material.color = Color.red;
             GameObject gm = GameObject.Find("GOD");
-            gm.GetComponent<GameManager>().AddScore(scorepointB);
+            gm.GetComponent<GameManager0427>().AddScore(scorepointB);
             GameObject gmB = GameObject.Find("GOD");
-            gmB.GetComponent<GameManager>().AddBroken(Broken);
+            gmB.GetComponent<GameManager0427>().AddBroken(Broken);
 
             audio.PlayOneShot(Explode);
             GameObject[] cubes = GameObject.FindGameObjectsWithTag("KABE");
@@ -45,9 +45,9 @@ public class ExplodingSphere : MonoBehaviour
                 Destroy(cube);
 
                 GameObject gmE = GameObject.Find("GOD");
-                gmE.GetComponent<GameManager>().AddScore(scorepointBc);
+                gmE.GetComponent<GameManager0427>().AddScore(scorepointBc);
                 GameObject gmBE = GameObject.Find("GOD");
-                gmBE.GetComponent<GameManager>().AddBroken(Brokenc);
+                gmBE.GetComponent<GameManager0427>().AddBroken(Brokenc);
 
                 Debug.Log("どっかーん！");
                 Destroy(gameObject, 2f);

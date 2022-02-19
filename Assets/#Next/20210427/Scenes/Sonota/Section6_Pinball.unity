@@ -150,8 +150,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b144fb8ed8421fc4cb32ba445b93577f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PressedX: 0
+  life: 0
+  DefaultLife: 0
+  Tamakazu: 0
+  DefaultTamakazu: 0
+  StageHighScore: 
+  IsStageCleared: 
+  StageNames: []
+  StageButton1: {fileID: 0}
+  StageButton2: {fileID: 0}
+  StageButton3: {fileID: 0}
+  StageButton4: {fileID: 0}
+  BossButton1: {fileID: 0}
+  SecletButton1: {fileID: 0}
   ballPrefab: {fileID: 2258968372208187316, guid: 4c8fcd25d1518c4419e52fb40ad25b01,
     type: 3}
+  textGameOver: {fileID: 0}
+  textClear: {fileID: 0}
+  textKatarite: {fileID: 0}
+  TitleButton: {fileID: 0}
+  RetlyButton: {fileID: 0}
+  SelectButton: {fileID: 0}
+  NextButton: {fileID: 0}
+  ResultPanel: {fileID: 0}
+  overSound: {fileID: 0}
+  killSound: {fileID: 0}
+  clearSound: {fileID: 0}
+  STAGE1: {fileID: 0}
+  STAGE2: {fileID: 0}
+  STAGE3: {fileID: 0}
+  STAGE4: {fileID: 0}
+  BOSS1: {fileID: 0}
+  SECLET1: {fileID: 0}
+  S1Open: 1
+  S2Open: 0
+  S3Open: 0
+  S4Oen: 0
+  B1Open: 0
+  Sc1Cleared: 1
+  Kidoued: 0
+  CLEAREDSwitch: 0
 --- !u!4 &221745517
 Transform:
   m_ObjectHideFlags: 0
@@ -386,6 +425,11 @@ PrefabInstance:
       propertyPath: bounce
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 9193092621690848622, guid: 7249f2dcdac1dd7459930060650acda3,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 221745516}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7249f2dcdac1dd7459930060650acda3, type: 3}
 --- !u!1 &895589753

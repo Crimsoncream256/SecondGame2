@@ -138,5 +138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e4d585c3edf3494a9c68f530b5c1d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   StoneBreaking: {fileID: 8300000, guid: 745b363433a3e7046b8f85489a3a057b, type: 3}
   bounce: 20

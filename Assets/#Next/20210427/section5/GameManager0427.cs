@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 //[System.Serializable]//セーブデータ作りたかった
 
-public class GameManager : MonoBehaviour
+public class GameManager0427 : MonoBehaviour
 {
     public int PressedX;
 

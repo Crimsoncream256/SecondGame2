@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.IO;
 
-public class Test : MonoBehaviour
+public class JsonTest : MonoBehaviour
 {
     [SerializeField] InputField inputArea;
     [SerializeField] Text counterText;

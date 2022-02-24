@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager0427 : MonoBehaviour
 {
+    public GameManager manager;
+
     public int PressedX;
 
     public int life;
@@ -96,7 +98,6 @@ public class GameManager0427 : MonoBehaviour
         //値設定
         score = 0;
         Kidoued += 1;
-        PressedX = 0;
 
         if (SceneManager.GetActiveScene().name == "Section5_3Continue")
         {

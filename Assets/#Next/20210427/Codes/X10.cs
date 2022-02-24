@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class X10 : MonoBehaviour
 {
+    public GameManager manager;
+    public bool onOff;
+
     public int PressedX;
     public GameObject XButton;
 
@@ -31,6 +34,8 @@ public class X10 : MonoBehaviour
                 {
                     if (PressedX == 10)
                     {
+                        GameObject gm = GameObject.Find("GOD");
+                        gm.GetComponent<GameManager>().isSecletOpened();
                         audiO.PlayOneShot(Tada);
                         Debug.Log("隠しステージ開放");
                         XButton.SetActive(true);

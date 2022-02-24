@@ -78,6 +78,10 @@ public class GameManager : MonoBehaviour
 
     //CreateWithUnity系
     public void LoadPrototype1()
+<<<<<<< HEAD
+
+        //これはこっち
+
     { SceneManager.LoadScene("Prototype 1"); }
 
     public void LoadPrototype2()
@@ -121,6 +125,36 @@ public class GameManager : MonoBehaviour
 
     public void LoadTitle5()
     { SceneManager.LoadScene("Title5"); }
+=======
+    { SceneManager.LoadScene("Prototype1"); }
+
+    public void LoadPrototype2()
+    { SceneManager.LoadScene("Prototype2"); }
+
+    public void LoadPrototype3()
+    { SceneManager.LoadScene("Prototype3"); }
+
+    public void LoadPrototype4()
+    { SceneManager.LoadScene("Prototype4"); }
+
+    public void LoadPrototype5()
+    { SceneManager.LoadScene("Prototype5"); }
+
+    public void LoadChallenge1()
+    { SceneManager.LoadScene("Challenge1"); }
+
+    public void LoadChallenge2()
+    { SceneManager.LoadScene("Challenge2"); }
+
+    public void LoadChallenge3()
+    { SceneManager.LoadScene("Challenge3"); }
+
+    public void LoadChallenge4()
+    { SceneManager.LoadScene("Challenge4"); }
+
+    public void LoadChallenge5()
+    { SceneManager.LoadScene("Challenge5"); }
+>>>>>>> master
 
     //CreateWithUnity系 ココマデ
 

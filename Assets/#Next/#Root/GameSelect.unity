@@ -1094,7 +1094,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
+<<<<<<< HEAD
         m_MethodName: LoadTitle1
+=======
+        m_MethodName: LoadSection5_2
+>>>>>>> master
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1734,7 +1738,11 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 1
+=======
+  m_IsActive: 0
+>>>>>>> master
 --- !u!4 &602073520
 Transform:
   m_ObjectHideFlags: 0
@@ -1842,7 +1850,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
+<<<<<<< HEAD
         m_MethodName: LoadTitle3
+=======
+        m_MethodName: LoadSection5_2
+>>>>>>> master
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3249,7 +3261,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
+<<<<<<< HEAD
         m_MethodName: LoadTitle5
+=======
+        m_MethodName: LoadSection5_2
+>>>>>>> master
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3827,7 +3843,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
+<<<<<<< HEAD
         m_MethodName: LoadTitle4
+=======
+        m_MethodName: LoadSection5_2
+>>>>>>> master
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4105,7 +4125,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
+<<<<<<< HEAD
         m_MethodName: LoadTitle2
+=======
+        m_MethodName: LoadSection5_2
+>>>>>>> master
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

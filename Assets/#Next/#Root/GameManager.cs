@@ -78,9 +78,6 @@ public class GameManager : MonoBehaviour
 
     //CreateWithUnity系
     public void LoadPrototype1()
-
-        //これはこっち
-
     { SceneManager.LoadScene("Prototype 1"); }
 
     public void LoadPrototype2()

@@ -1096,10 +1096,14 @@ MonoBehaviour:
       - m_Target: {fileID: 293579823}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_MethodName: LoadTitle1
 =======
         m_MethodName: LoadSection5_2
 >>>>>>> master
+=======
+        m_MethodName: LoadSection5_2
+>>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f
 =======
         m_MethodName: LoadSection5_2
 >>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f
@@ -1744,10 +1748,14 @@ GameObject:
   m_StaticEditorFlags: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IsActive: 1
 =======
   m_IsActive: 0
 >>>>>>> master
+=======
+  m_IsActive: 0
+>>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f
 =======
   m_IsActive: 0
 >>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f
@@ -1860,10 +1868,14 @@ MonoBehaviour:
       - m_Target: {fileID: 293579823}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_MethodName: LoadTitle3
 =======
         m_MethodName: LoadSection5_2
 >>>>>>> master
+=======
+        m_MethodName: LoadSection5_2
+>>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f
 =======
         m_MethodName: LoadSection5_2
 >>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f
@@ -3275,10 +3287,14 @@ MonoBehaviour:
       - m_Target: {fileID: 293579823}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_MethodName: LoadTitle5
 =======
         m_MethodName: LoadSection5_2
 >>>>>>> master
+=======
+        m_MethodName: LoadSection5_2
+>>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f
 =======
         m_MethodName: LoadSection5_2
 >>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f
@@ -3861,10 +3877,14 @@ MonoBehaviour:
       - m_Target: {fileID: 293579823}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_MethodName: LoadTitle4
 =======
         m_MethodName: LoadSection5_2
 >>>>>>> master
+=======
+        m_MethodName: LoadSection5_2
+>>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f
 =======
         m_MethodName: LoadSection5_2
 >>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f
@@ -4147,10 +4167,14 @@ MonoBehaviour:
       - m_Target: {fileID: 293579823}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_MethodName: LoadTitle2
 =======
         m_MethodName: LoadSection5_2
 >>>>>>> master
+=======
+        m_MethodName: LoadSection5_2
+>>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f
 =======
         m_MethodName: LoadSection5_2
 >>>>>>> 2aa47af1c8f84f8348fbcb507818f4575f7e898f

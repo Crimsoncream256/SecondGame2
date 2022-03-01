@@ -9,6 +9,7 @@ public class EnemyX4 : MonoBehaviour
     private GameObject playerGoal;
 
     private SpawnManagerX4 sp4;
+    private GameManagerX4 gm4;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class EnemyX4 : MonoBehaviour
         enemyRb = GetComponent<Rigidbody>();
         playerGoal = GameObject.Find("Player Goal");
         sp4 = GameObject.Find("Spawn Manager").GetComponent<SpawnManagerX4>();
+        gm4 = GameObject.Find("GOD").GetComponent<GameManagerX4>();
         speed = sp4.enemySpeed;
     }
 
@@ -33,6 +35,8 @@ public class EnemyX4 : MonoBehaviour
         // If enemy collides with either goal, destroy it
         if (other.gameObject.name == "Enemy Goal")
         {
+            gm4.score += 10;
+            gm4.check();
             Destroy(gameObject);
         } 
         else if (other.gameObject.name == "Player Goal")

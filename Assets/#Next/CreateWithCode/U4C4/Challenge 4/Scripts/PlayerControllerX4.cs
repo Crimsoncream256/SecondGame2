@@ -32,7 +32,7 @@ public class PlayerControllerX4 : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            shiftBoost = 2f;
+            shiftBoost = 4f;
             kemuri.gameObject.SetActive(true);
 
         }
@@ -41,7 +41,7 @@ public class PlayerControllerX4 : MonoBehaviour
             shiftBoost = 1f;
             kemuri.gameObject.SetActive(false);
         }
-        Debug.Log(shiftBoost);
+        //Debug.Log(shiftBoost);
         playerRb.AddForce(focalPoint.transform.forward * verticalInput * shiftBoost * speed * Time.deltaTime);
 
         // Set powerup indicator position to beneath player

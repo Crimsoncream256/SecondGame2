@@ -30,6 +30,10 @@ public class GameManager : MonoBehaviour
 
     //Group系　ココマデ
 
+    //各ゲームハイスコア系
+
+    //各ゲームハイスコア系　ココマデ
+
 
 
     public void OnClickEvent()

@@ -9,6 +9,9 @@ public class DifficultyButtonU5 : MonoBehaviour
     private GameManagerU5 gameManager;
     public int difficulty;
 
+    private float leftTime;
+    private Text textTimer;
+
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManagerU5>();

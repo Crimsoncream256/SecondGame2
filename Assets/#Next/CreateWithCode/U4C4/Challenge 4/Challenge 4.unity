@@ -316,6 +316,7 @@ MonoBehaviour:
     type: 3}
   enemyCount: 0
   waveCount: 1
+  enemySpeed: 50
   player: {fileID: 583048338}
 --- !u!1001 &258741155
 PrefabInstance:
@@ -868,7 +869,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055584949}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: af1673d43c47ca245baf0d1c9c84363f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4

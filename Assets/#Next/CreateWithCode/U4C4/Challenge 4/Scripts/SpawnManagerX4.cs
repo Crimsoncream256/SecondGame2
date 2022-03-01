@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnManagerX : MonoBehaviour
+public class SpawnManagerX4 : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public GameObject powerupPrefab;
@@ -13,6 +13,9 @@ public class SpawnManagerX : MonoBehaviour
 
     public int enemyCount;
     public int waveCount = 1;
+
+    public float enemySpeed = 5;
+    
 
 
     public GameObject player; 
@@ -55,8 +58,11 @@ public class SpawnManagerX : MonoBehaviour
             Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
         }
 
-        ResetPlayerPosition(); // put player back at start
+
         waveCount++;
+        enemySpeed *= 1f;
+
+        ResetPlayerPosition(); // put player back at start
         
 
     }

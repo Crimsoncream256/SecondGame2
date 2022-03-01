@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyX : MonoBehaviour
+public class EnemyX4 : MonoBehaviour
 {
     public float speed;
     private Rigidbody enemyRb;
     private GameObject playerGoal;
+
+    private SpawnManagerX4 sp4;
 
     // Start is called before the first frame update
     void Start()
     {
         enemyRb = GetComponent<Rigidbody>();
         playerGoal = GameObject.Find("Player Goal");
+        sp4 = GameObject.Find("Spawn Manager").GetComponent<SpawnManagerX4>();
+        speed = sp4.enemySpeed;
     }
 
     // Update is called once per frame

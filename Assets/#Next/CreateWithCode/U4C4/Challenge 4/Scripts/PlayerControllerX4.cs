@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControllerX : MonoBehaviour
+public class PlayerControllerX4 : MonoBehaviour
 {
     private Rigidbody playerRb;
     private float speed = 500;
@@ -17,6 +17,8 @@ public class PlayerControllerX : MonoBehaviour
 
     public float shiftBoost;
     public GameObject kemuri;
+
+
 
     void Start()
     {
@@ -40,7 +42,7 @@ public class PlayerControllerX : MonoBehaviour
             kemuri.gameObject.SetActive(false);
         }
         Debug.Log(shiftBoost);
-        playerRb.AddForce(focalPoint.transform.forward * verticalInput * speed * Time.deltaTime);
+        playerRb.AddForce(focalPoint.transform.forward * verticalInput * shiftBoost * speed * Time.deltaTime);
 
         // Set powerup indicator position to beneath player
         powerupIndicator.transform.position = transform.position + new Vector3(0, -0.6f, 0);

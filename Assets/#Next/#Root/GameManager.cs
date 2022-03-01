@@ -80,6 +80,17 @@ public class GameManager : MonoBehaviour
 
     //LoadScene系
 
+    public void Retry()
+    { SceneManager.LoadScene(SceneManager.GetActiveScene().name); }
+    
+    public void isRPressed()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Retry();
+        }
+    }
+
     //CreateWithUnity系
     public void LoadPrototype1()
     { SceneManager.LoadScene("Prototype 1"); }
@@ -239,5 +250,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         debuglogsiro();
+    }
+
+    private void Update()
+    {
+        isRPressed();
     }
 }

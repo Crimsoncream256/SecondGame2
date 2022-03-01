@@ -14,7 +14,7 @@ public class GameManagerX4 : MonoBehaviour
 
     void Start()
     {
-        
+        check();
     }
 
     public void check()

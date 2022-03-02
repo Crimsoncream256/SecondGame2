@@ -120,6 +120,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void PauseFaction()
+    {
+        if (Mathf.Approximately(Time.timeScale, 1f))
+        {
+            Time.timeScale = 0f;
+            pauseUI.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            pauseUI.SetActive(false);
+        }
+    }
+
     //CreateWithUnity系
     public void LoadPrototype1()
     { SceneManager.LoadScene("Prototype 1"); }
@@ -291,16 +305,7 @@ public class GameManager : MonoBehaviour
         isRPressed();
         if (Input.GetButtonDown("Pause"))
         {
-            if (Mathf.Approximately(Time.timeScale, 1f))
-            {
-                Time.timeScale = 0f;
-                pauseUI.SetActive(true);
-            }
-            else
-            {
-                Time.timeScale = 1f;
-                pauseUI.SetActive(false);
-            }
+            PauseFaction();
         }
     }
 }

@@ -49,6 +49,9 @@ public class GameManager : MonoBehaviour
 
     //各ゲームハイスコア系　ココマデ
 
+    [SerializeField]
+    private GameObject pauseUI;
+
 
 
     public void OnClickEvent()
@@ -280,10 +283,24 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("wafadsc");
         }
+        pauseUI.SetActive(false);
     }
 
     private void Update()
     {
         isRPressed();
+        if (Input.GetButtonDown("Pause"))
+        {
+            if (Mathf.Approximately(Time.timeScale, 1f))
+            {
+                Time.timeScale = 0f;
+                pauseUI.SetActive(true);
+            }
+            else
+            {
+                Time.timeScale = 1f;
+                pauseUI.SetActive(false);
+            }
+        }
     }
 }

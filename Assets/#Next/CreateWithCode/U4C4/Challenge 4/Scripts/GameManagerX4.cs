@@ -11,10 +11,14 @@ public class GameManagerX4 : MonoBehaviour
 
     public Text textscore;
     public int score;
+    public float defaultTime;
+    private float time;
+    public Text textTime;
 
     void Start()
     {
         check();
+        time = defaultTime;
     }
 
     public void check()
@@ -22,10 +26,12 @@ public class GameManagerX4 : MonoBehaviour
         //score += 10;
         //Debug.Log(score);
         textscore.text = "score: " + score;
+        
     }
 
     void Update()
     {
-        
+        time -= Time.deltaTime;
+        textTime.text = "Time: " + time;
     }
 }

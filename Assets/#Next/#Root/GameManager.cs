@@ -14,10 +14,25 @@ public class GameManager : MonoBehaviour
 
     [System.Serializable]
     public class PlayerDataG
-    {
+    {//ここに置かれているデータが保存されます
         public int clickCount;
         public string playerName;
         public bool SecletOpened;
+
+        public int hsU1;
+        public int hsU2;
+        public int hsU3;
+        public int hsU4;
+        public int hsU5;
+
+        public int hsX1;
+        public int hsX2;
+        public int hsX3;
+
+        public int hsX4_0;
+        public int hsX4_1;
+
+        public int hsX5;
     }
 
     PlayerDataG myData = new PlayerDataG();
@@ -45,6 +60,17 @@ public class GameManager : MonoBehaviour
     public void isSecletOpened()
     {
         SecletOpen = true;
+    }
+
+    IEnumerator Timer(int defaultTime)
+    {
+        int time = defaultTime;
+        yield return new WaitForSeconds(defaultTime);
+
+        while (defaultTime >= time)
+        {
+
+        }
     }
 
 

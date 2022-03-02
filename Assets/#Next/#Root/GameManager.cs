@@ -276,6 +276,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         debuglogsiro();
+        if (SceneManager.GetActiveScene().name == "Section5_3Continue")
+        {
+            Debug.Log("wafadsc");
+        }
     }
 
     private void Update()

@@ -586,7 +586,7 @@ MonoBehaviour:
     type: 3}
   textTimer: {fileID: 92100617}
   Tamakazu: 0
-  DefaultTamakazu: 0
+  DefaultTamakazu: 3
   isGameActive: 0
 --- !u!4 &355618745
 Transform:

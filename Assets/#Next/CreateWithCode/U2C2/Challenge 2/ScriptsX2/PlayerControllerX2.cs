@@ -11,7 +11,7 @@ public class PlayerControllerX2 : MonoBehaviour
     public Text textTimer;
 
     public int Tamakazu;
-    public int DefaultTamakazu;
+    public int DefaultTamakazu = 3;
     GameObject[] tagObjects;
     public bool isGameActive;
 
@@ -19,18 +19,46 @@ public class PlayerControllerX2 : MonoBehaviour
     {
         tagObjects = GameObject.FindGameObjectsWithTag(tagname);
         Debug.Log(tagObjects.Length); //tagObjects.Lengthはオブジェクトの数
-        if (tagObjects.Length < DefaultTamakazu)
+        //if (tagObjects.Length < DefaultTamakazu)
         {
             Debug.Log(tagname + "タグつきobjがTamakazuより少ない");
             //この逆は　タグ付きobjがTamakazuより多い　　つまりtagObjects.Length > DefaultTamakazu
         }
     }
 
+    public void checkDoggy(string tagname)
+    {
+        tagObjects = GameObject.FindGameObjectsWithTag(tagname);
+        //Debug.Log(tagObjects.Length); //tagObjects.Lengthはオブジェクトの数
+
+        if (tagObjects.Length == 0)
+        {
+            Debug.Log(tagname + "タグがついたオブジェクトはありません");
+        }
+        else if (tagObjects.Length < DefaultTamakazu)
+        {
+            Debug.Log(tagname + "タグつきobjがDefaultTamakazuより少ない");
+        }
+        else if (tagObjects.Length > DefaultTamakazu)
+        {
+            Debug.Log(tagname + "タグつきobjがDefaultTamakazuより多い");
+        }
+        else
+        {
+            if (tagObjects.Length > DefaultTamakazu + 1)
+            {
+                Debug.Log("One More One");
+            }
+            Debug.Log("ﾚｲｶﾞｲ");
+        }
+    }
+
     public void StartGame(int difficulty)
     {
         isGameActive = true;
-        DefaultTamakazu /= difficulty;
-        Debug.Log(difficulty);
+        DefaultTamakazu = difficulty;
+        Tamakazu = DefaultTamakazu;
+        Debug.Log("ﾅﾝｲﾄﾞﾊ"+difficulty);
         leftTime = 100f;
     }
 
@@ -43,7 +71,7 @@ public class PlayerControllerX2 : MonoBehaviour
     void Update()
     {
         tagObjects = GameObject.FindGameObjectsWithTag("Dog");
-        Debug.Log(tagObjects.Length);
+        //Debug.Log(tagObjects.Length);
 
         leftTime -= Time.deltaTime;
         textTimer.text = "Time:" + (leftTime > 0f ? leftTime.ToString("0.00") : "0.00");
@@ -54,8 +82,10 @@ public class PlayerControllerX2 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            checkDoggy("Dog");
+
             tagObjects = GameObject.FindGameObjectsWithTag("Dog");
-            if (tagObjects.Length <= DefaultTamakazu)//わんこ <= 5つ
+            if (tagObjects.Length + 1 <= DefaultTamakazu)//わんこ <= 5つ
             {
                 Debug.Log("true");
                 Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);

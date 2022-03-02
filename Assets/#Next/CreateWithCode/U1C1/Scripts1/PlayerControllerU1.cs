@@ -24,10 +24,12 @@ public class PlayerControllerU1 : MonoBehaviour
         transform.Rotate(Vector3.up, horizontalInput * Time.deltaTime * turnSpeed);
     }
 
+    /*
     void gameOver01()
     {
 
     }
+    */
 
     private void OnCollisionEnter(Collision other)
     {

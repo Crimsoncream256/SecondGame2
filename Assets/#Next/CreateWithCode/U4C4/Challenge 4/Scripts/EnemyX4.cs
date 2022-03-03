@@ -10,6 +10,7 @@ public class EnemyX4 : MonoBehaviour
 
     private SpawnManagerX4 sp4;
     private GameManagerX4 gm4;
+    public GameManager gm;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class EnemyX4 : MonoBehaviour
         sp4 = GameObject.Find("Spawn Manager").GetComponent<SpawnManagerX4>();
         gm4 = GameObject.Find("GOD").GetComponent<GameManagerX4>();
         speed = sp4.enemySpeed;
+        
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class EnemyX4 : MonoBehaviour
         if (other.gameObject.name == "Enemy Goal")
         {
             gm4.score += 10;
+            //coin++
             gm4.check();
             Destroy(gameObject);
         } 

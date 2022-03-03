@@ -16,11 +16,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pauseUI;
 
     [System.Serializable]
-    public class PlayerDataG
+    public class PlayerDataG : MonoBehaviour
     {//ここに置かれているデータが保存されます
         public int clickCount;
         public string playerName;
         public bool SecletOpened;
+
+        public int coins;
 
         public int hsU1;
         public int hsU2;
@@ -64,9 +66,9 @@ public class GameManager : MonoBehaviour
 
     public void OnClickEvent()
     {
-        myData.clickCount++;
-        Debug.Log(myData.clickCount);
-        counterText.text = myData.clickCount.ToString();
+        myData.coins++;
+        Debug.Log(myData.coins);
+        counterText.text = myData.coins.ToString();
     }
 
     public void isSecletOpened()
@@ -240,6 +242,7 @@ public class GameManager : MonoBehaviour
         //起動したときだけ発生するイベント
         kidouCount++;
         Debug.Log("起動確認: 起動カウント" + kidouCount);
+        //起動カウントはセーブデータごとではなく実機ごとにしようかな…？
     }
 
     void Awake()

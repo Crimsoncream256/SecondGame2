@@ -11,10 +11,13 @@ public class EnemyX4 : MonoBehaviour
     private SpawnManagerX4 sp4;
     private GameManagerX4 gm4;
     public GameManager gm;
+    private int coins4;
 
     // Start is called before the first frame update
     void Start()
     {
+        gm = GameObject.Find("GOD").GetComponent<GameManager>();
+        
         enemyRb = GetComponent<Rigidbody>();
         playerGoal = GameObject.Find("Player Goal");
         sp4 = GameObject.Find("Spawn Manager").GetComponent<SpawnManagerX4>();
@@ -39,6 +42,8 @@ public class EnemyX4 : MonoBehaviour
         {
             gm4.score += 10;
             //coin++
+            gm.GetComponent<GameManager>().PlusCoins(10);
+            Debug.Log("は？");
             gm4.check();
             Destroy(gameObject);
         } 

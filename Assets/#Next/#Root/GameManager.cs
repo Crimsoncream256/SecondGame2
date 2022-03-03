@@ -14,9 +14,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] static int kidouCount;
 
     [SerializeField] private GameObject pauseUI;
+    [SerializeField] private Text coinsText;
+
 
     [System.Serializable]
-    public class PlayerDataG : MonoBehaviour
+    public class PlayerDataG
     {//ここに置かれているデータが保存されます
         public int clickCount;
         public string playerName;
@@ -114,6 +116,7 @@ public class GameManager : MonoBehaviour
         myData = JsonUtility.FromJson<PlayerDataG>(datastr); // ロードしたデータで上書き
         Debug.Log(myData.playerName + "のデータをロードしました");
         counterText.text = myData.clickCount.ToString();
+        coinsText.text = "coins: " + myData.coins.ToString();
     }
 
 
@@ -267,5 +270,11 @@ public class GameManager : MonoBehaviour
         {
             PauseFaction();
         }
+    }
+    public void PlusCoins(int amount)
+    {
+        myData.coins += amount;
+        coinsText.text = "coins: " + myData.coins.ToString();
+        Debug.Log(myData.coins+"コインをゲット");
     }
 }

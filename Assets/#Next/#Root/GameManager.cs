@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] InputField inputArea;
     [SerializeField] Text counterText;
     [SerializeField] bool SecletOpen;
+    [SerializeField] int kidouCount;
+
+    [SerializeField] private GameObject pauseUI;
 
     [System.Serializable]
     public class PlayerDataG
@@ -33,15 +36,17 @@ public class GameManager : MonoBehaviour
         public int hsX4_1;
 
         public int hsX5;
+
+        public int startCount; 
     }
 
     PlayerDataG myData = new PlayerDataG();
 
     //Group系
 
-    public GameObject lessonGroup;
-    public GameObject createWithUnityGroup;
-    public GameObject otherGroup;
+        public GameObject lessonGroup;
+        public GameObject createWithUnityGroup;
+        public GameObject otherGroup;
 
     //Group系　ココマデ
 
@@ -49,10 +54,13 @@ public class GameManager : MonoBehaviour
 
     //各ゲームハイスコア系　ココマデ
 
-    [SerializeField]
-    private GameObject pauseUI;
 
 
+
+    //全体系
+
+    public void debuglogsiro()
+    {  Debug.Log("?????????????"); }
 
     public void OnClickEvent()
     {
@@ -61,9 +69,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void isSecletOpened()
-    {
-        SecletOpen = true;
-    }
+    { SecletOpen = true; }
 
     IEnumerator Timer(int defaultTime)
     {
@@ -107,18 +113,8 @@ public class GameManager : MonoBehaviour
         counterText.text = myData.clickCount.ToString();
     }
 
-    //LoadScene系
 
-    public void Retry()
-    { SceneManager.LoadScene(SceneManager.GetActiveScene().name); }
-    
-    public void isRPressed()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Retry();
-        }
-    }
+
 
     public void PauseFaction()
     {
@@ -134,148 +130,102 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    //CreateWithUnity系
-    public void LoadPrototype1()
-    { SceneManager.LoadScene("Prototype 1"); }
+    //全体系　ココマデ
 
-    public void LoadPrototype2()
-    { SceneManager.LoadScene("Prototype 2"); }
+    //LoadScene系
 
-    public void LoadPrototype3()
-    { SceneManager.LoadScene("Prototype 3"); }
+        public void Retry()
+        { SceneManager.LoadScene(SceneManager.GetActiveScene().name); }
+    
+        public void isRPressed()
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            { Retry(); }
+        }
 
-    public void LoadPrototype4()
-    { SceneManager.LoadScene("Prototype 4"); }
+        //CreateWithCode系
+            public void LoadPrototype1() { SceneManager.LoadScene("Prototype 1"); }
 
-    public void LoadPrototype5()
-    { SceneManager.LoadScene("Prototype 5"); }
+            public void LoadPrototype2() { SceneManager.LoadScene("Prototype 2"); }
 
-    public void LoadChallenge1()
-    { SceneManager.LoadScene("Challenge 1"); }
+            public void LoadPrototype3() { SceneManager.LoadScene("Prototype 3"); }
 
-    public void LoadChallenge2()
-    { SceneManager.LoadScene("Challenge 2"); }
+            public void LoadPrototype4() { SceneManager.LoadScene("Prototype 4"); }
 
-    public void LoadChallenge3()
-    { SceneManager.LoadScene("Challenge 3"); }
+            public void LoadPrototype5() { SceneManager.LoadScene("Prototype 5"); }
 
-    public void LoadChallenge4()
-    { SceneManager.LoadScene("Challenge 4"); }
+            public void LoadChallenge1() { SceneManager.LoadScene("Challenge 1"); }
 
-    public void LoadChallenge5()
-    { SceneManager.LoadScene("Challenge 5"); }
+            public void LoadChallenge2()  { SceneManager.LoadScene("Challenge 2"); }
 
-    public void LoadTitle1()
-    { SceneManager.LoadScene("Title1"); }
+            public void LoadChallenge3()  { SceneManager.LoadScene("Challenge 3"); }
 
-    public void LoadTitle2()
-    { SceneManager.LoadScene("Title2"); }
+            public void LoadChallenge4() { SceneManager.LoadScene("Challenge 4"); }
 
-    public void LoadTitle3()
-    { SceneManager.LoadScene("Title3"); }
+            public void LoadChallenge5() { SceneManager.LoadScene("Challenge 5"); }
 
-    public void LoadTitle4()
-    { SceneManager.LoadScene("Title4"); }
+            public void LoadTitle1() { SceneManager.LoadScene("Title1"); }
 
-    public void LoadTitle5()
-    { SceneManager.LoadScene("Title5"); }
+            public void LoadTitle2() { SceneManager.LoadScene("Title2"); }
 
-    //CreateWithUnity系 ココマデ
+            public void LoadTitle3() { SceneManager.LoadScene("Title3"); }
 
-    //授業成果系
+            public void LoadTitle4() { SceneManager.LoadScene("Title4"); }
 
-    public void LoadSection5_2()
-    { SceneManager.LoadScene("Section5_2"); }
+            public void LoadTitle5() { SceneManager.LoadScene("Title5"); }
 
-    public void LoadSection5_3Continue()
-    { SceneManager.LoadScene("Section5_3Continue"); }
+        //CreateWithUnity系 ココマデ
 
-    public void LoadSection5_4Settings()
-    { SceneManager.LoadScene("Section5_3Settings"); }
+        //授業成果系
 
-    public void LoadSection5_5Credits()
-    { SceneManager.LoadScene("Section5_5Credits"); }
+            public void LoadSection5_2() { SceneManager.LoadScene("Section5_2"); }
 
-    public void LoadSection5_6Pinball()
-    { SceneManager.LoadScene("Section5_6Pinball"); }
+            public void LoadSection5_3Continue() { SceneManager.LoadScene("Section5_3Continue"); }
 
-    public void LoadTitleandStages20211130()
-    { SceneManager.LoadScene("TitleandStages20211130"); }
+            public void LoadSection5_4Settings() { SceneManager.LoadScene("Section5_3Settings"); }
 
-    public void LoadFirstscene()
-    { SceneManager.LoadScene("Firstscene"); }
+            public void LoadSection5_5Credits() { SceneManager.LoadScene("Section5_5Credits"); }
 
-    public void LoadBoss1()
-    { SceneManager.LoadScene("Boss1"); }
+            public void LoadSection5_6Pinball() { SceneManager.LoadScene("Section5_6Pinball"); }
 
-    public void LoadAsobi02()
-    { SceneManager.LoadScene("Asobi02"); }
+            public void LoadTitleandStages20211130() { SceneManager.LoadScene("TitleandStages20211130"); }
+
+            public void LoadFirstscene() { SceneManager.LoadScene("Firstscene"); }
+
+            public void LoadBoss1() { SceneManager.LoadScene("Boss1"); }
+
+            public void LoadAsobi02() { SceneManager.LoadScene("Asobi02"); }
 
 
-    public void SetActiveLessonGroup()
-    {
-        //Debug.Log("じゃどｊ");
-        lessonGroup.SetActive(true);
-    }
+            public void SetActiveLessonGroup() { lessonGroup.SetActive(true); }
+            public void SetDisActiveLessonGroup() { lessonGroup.SetActive(false); }
 
-    public void debuglogsiro()
-    {
-        Debug.Log("?????????????");
-    }
+            public void SetActiveCreateWithUnityGroup() { createWithUnityGroup.SetActive(true); }
+            public void SetDisActiveCreateWithUnityGroup() { createWithUnityGroup.SetActive(false); }
 
-    public void SetDisActiveLessonGroup()
-    {
-        lessonGroup.SetActive(false);
-    }
-
-    public void SetActiveCreateWithUnityGroup()
-    {
-        createWithUnityGroup.SetActive(true);
-    }
-
-    public void SetDisActiveCreateWithUnityGroup()
-    {
-        createWithUnityGroup.SetActive(false);
-    }
-
-    public void SetActiveOtherGroup()
-    {
-        otherGroup.SetActive(true);
-    }
-
-    public void SetDisActiveOtherGroup()
-    {
-        otherGroup.SetActive(false);
-    }
+            public void SetActiveOtherGroup() { otherGroup.SetActive(true); }
+            public void SetDisActiveOtherGroup() { otherGroup.SetActive(false); }
 
 
-    //授業成果系　ココマデ
+        //授業成果系　ココマデ
 
-    //個人系
+        //個人系
 
-    public void LoadGameSelect()
-    { SceneManager.LoadScene("GameSelect"); }
+    public void LoadGameSelect() { SceneManager.LoadScene("GameSelect"); }
 
-    public void LoadTestClickerScene()
-    { SceneManager.LoadScene("TestClickerScene"); }
+    public void LoadTestClickerScene() { SceneManager.LoadScene("TestClickerScene"); }
 
-    public void LoadJsonClicker()
-    { SceneManager.LoadScene("JsonClicker"); }
+    public void LoadJsonClicker() { SceneManager.LoadScene("JsonClicker"); }
 
-    public void LoadGaleemKarinScene()
-    { SceneManager.LoadScene("GaleemKarinScene"); }
+    public void LoadGaleemKarinScene() { SceneManager.LoadScene("GaleemKarinScene"); }
 
-    public void LoadMain()
-    { SceneManager.LoadScene("Main"); }
+    public void LoadMain() { SceneManager.LoadScene("Main"); }
 
-    public void LoadTitleScene()
-    { SceneManager.LoadScene("TitleScene"); }
+    public void LoadTitleScene() { SceneManager.LoadScene("TitleScene"); }
 
-    public void LoadAchievementsScene()
-    { SceneManager.LoadScene("AchievementsScene"); }
+    public void LoadAchievementsScene() { SceneManager.LoadScene("AchievementsScene"); }
 
-    public void ButtonExit()
-    { UnityEngine.Application.Quit(); }
+    public void ButtonExit() { Application.Quit(); }
 
 
 
@@ -283,7 +233,12 @@ public class GameManager : MonoBehaviour
 
     //LoadScene系　ココマデ
 
-
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    private static void Initialize()
+    {
+        //起動したときだけ発生するイベント
+        Debug.Log("kidouCount");
+    }
 
     void Awake()
     {

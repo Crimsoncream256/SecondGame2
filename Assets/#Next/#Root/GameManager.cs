@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] InputField inputArea;
     [SerializeField] Text counterText;
     [SerializeField] bool SecletOpen;
-    [SerializeField] int kidouCount;
+    [SerializeField] static int kidouCount;
 
     [SerializeField] private GameObject pauseUI;
 
@@ -37,14 +37,14 @@ public class GameManager : MonoBehaviour
 
         public int hsX5;
 
-        public int startCount; 
+        public static int startCount; 
     }
 
     PlayerDataG myData = new PlayerDataG();
 
     //Group系
 
-        public GameObject lessonGroup;
+    public GameObject lessonGroup;
         public GameObject createWithUnityGroup;
         public GameObject otherGroup;
 
@@ -65,6 +65,7 @@ public class GameManager : MonoBehaviour
     public void OnClickEvent()
     {
         myData.clickCount++;
+        Debug.Log(myData.clickCount);
         counterText.text = myData.clickCount.ToString();
     }
 
@@ -237,7 +238,8 @@ public class GameManager : MonoBehaviour
     private static void Initialize()
     {
         //起動したときだけ発生するイベント
-        Debug.Log("kidouCount");
+        kidouCount++;
+        Debug.Log("起動確認: 起動カウント" + kidouCount);
     }
 
     void Awake()

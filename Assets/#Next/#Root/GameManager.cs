@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pauseUI;
     [SerializeField] private Text coinsText;
 
+    public List<GameObject> series3List;
+
+    public int inGameMode;
+
 
     [System.Serializable]
     public class PlayerDataG
@@ -25,6 +29,9 @@ public class GameManager : MonoBehaviour
         public bool SecletOpened;
 
         public int coins;
+
+        public int series3AvaterNum;
+        public int FarmorTown;
 
         public int hsU1;
         public int hsU2;
@@ -149,7 +156,20 @@ public class GameManager : MonoBehaviour
             { Retry(); }
         }
 
-        //CreateWithCode系
+    //CreateWithCode系
+
+            public void LoadPrototypes(int num) { SceneManager.LoadScene("Prototype " + num); }
+
+            public void ChangeAvaterNumU3(int num)
+            {
+                myData.series3AvaterNum = num;
+            }
+
+            public void ChangeAvaterFBXU3()
+            {
+                
+            }
+
             public void LoadPrototype1() { SceneManager.LoadScene("Prototype 1"); }
 
             public void LoadPrototype2() { SceneManager.LoadScene("Prototype 2"); }
@@ -180,7 +200,7 @@ public class GameManager : MonoBehaviour
 
             public void LoadTitle5() { SceneManager.LoadScene("Title5"); }
 
-        //CreateWithUnity系 ココマデ
+        //CreateWithCode系 ココマデ
 
         //授業成果系
 

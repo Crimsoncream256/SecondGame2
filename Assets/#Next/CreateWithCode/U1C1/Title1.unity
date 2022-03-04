@@ -2353,6 +2353,9 @@ MonoBehaviour:
   inputArea: {fileID: 0}
   counterText: {fileID: 0}
   SecletOpen: 0
+  pauseUI: {fileID: 0}
+  coinsText: {fileID: 0}
+  inGameMode: 0
   lessonGroup: {fileID: 0}
   createWithUnityGroup: {fileID: 0}
   otherGroup: {fileID: 0}

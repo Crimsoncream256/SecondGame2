@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text coinsText;
 
     public List<GameObject> series3List;
+    public Text series3avaterText;
+    public Text series3VariationText;
 
     public int inGameMode;
 
@@ -31,6 +33,7 @@ public class GameManager : MonoBehaviour
         public int coins;
 
         public int series3AvaterNum;
+        public int series3variation;
         public int FarmorTown;
 
         public int hsU1;
@@ -163,6 +166,13 @@ public class GameManager : MonoBehaviour
             public void ChangeAvaterNumU3(int num)
             {
                 myData.series3AvaterNum = num;
+                series3avaterText.text = "使用アバター番号: " + myData.series3AvaterNum;
+            }
+
+            public void ChangeAvaterVariationU3(int num)
+            {
+                myData.series3variation = num;
+                series3VariationText.text = "バリエーション: " + myData.series3variation;
             }
 
             public void ChangeAvaterFBXU3()

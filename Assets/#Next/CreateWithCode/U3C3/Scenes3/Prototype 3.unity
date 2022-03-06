@@ -249,12 +249,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1093331200}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &345773863 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: f147a01ef442b2345a3546109476c690,
-    type: 3}
-  m_PrefabInstance: {fileID: 1093331200}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &345773864
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -299,7 +293,6 @@ MonoBehaviour:
   jumpForce: 10
   gravityModifier: 1
   isOnGround: 1
-  playerAnim: {fileID: 345773863}
   gameOver: 0
   explosionParticle: {fileID: 1445771225}
   dirtParticle: {fileID: 1673713012}
@@ -910,6 +903,8 @@ MonoBehaviour:
   - {fileID: 2122915802}
   - {fileID: 99820120}
   - {fileID: 906021149}
+  series3avaterText: {fileID: 0}
+  series3VariationText: {fileID: 0}
   inGameMode: 0
   lessonGroup: {fileID: 0}
   createWithUnityGroup: {fileID: 0}
@@ -940,6 +935,18 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f147a01ef442b2345a3546109476c690, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 106812, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 109300, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 135232, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 154520, guid: f147a01ef442b2345a3546109476c690, type: 3}
       propertyPath: m_IsActive
@@ -993,10 +1000,54 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 5113c9ac0bba4c74da249d4ed377675a, type: 2}
+    - target: {fileID: 13700094, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700094, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 34c2d8b1b19253547badb55d82bb8103, type: 2}
+    - target: {fileID: 13700094, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 13700094, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 27d5bc9fe48a1ba4f8389809b897e6cb, type: 2}
+    - target: {fileID: 13759650, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 13759650, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 632309c76598ef2439d70d47bb507f87, type: 2}
+    - target: {fileID: 13759650, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: af9d542d86ca4fc4f842a8266577ae5e, type: 2}
+    - target: {fileID: 13759650, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 497bbddce010fea4da3dcb5c5210ad16, type: 2}
+    - target: {fileID: 13770362, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 13770362, guid: f147a01ef442b2345a3546109476c690, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 34c2d8b1b19253547badb55d82bb8103, type: 2}
+    - target: {fileID: 13770362, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 848858d55d6e52e46a6c23cbb76aa006, type: 2}
+    - target: {fileID: 13770362, guid: f147a01ef442b2345a3546109476c690, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: cba661a44d31ac342b6e3f75f0701f9e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f147a01ef442b2345a3546109476c690, type: 3}
 --- !u!1 &1160356921 stripped
@@ -1325,11 +1376,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 156988, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 172560, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 188748, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
       propertyPath: m_IsActive
@@ -1428,12 +1479,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
---- !u!95 &2013883077 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: 610afbb40c4385d42aa33adfe3531f0a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2013883073}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2013883078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 610afbb40c4385d42aa33adfe3531f0a,
@@ -1455,7 +1500,6 @@ MonoBehaviour:
   jumpForce: 10
   gravityModifier: 1
   isOnGround: 1
-  playerAnim: {fileID: 2013883077}
   gameOver: 0
   explosionParticle: {fileID: 591758955}
   dirtParticle: {fileID: 1494875213}

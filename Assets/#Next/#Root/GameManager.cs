@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
     public Text series3avaterText;
     public Text series3VariationText;
 
+    public Text scoreU1Text;
+    public Text highscoreU1Text;
+
+
     public int inGameMode;
 
 
@@ -291,6 +295,13 @@ public class GameManager : MonoBehaviour
             Debug.Log("wafadsc");
         }
         pauseUI.SetActive(false);
+
+        if (SceneManager.GetActiveScene().name == "Prototype 3")
+        { 
+            //アバター番号を見つけてむこうで照合
+            //バリエーション番号をむこうで照合
+            //照合したものを
+        }
     }
 
     private void Update()

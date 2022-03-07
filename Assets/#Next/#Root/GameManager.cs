@@ -29,10 +29,10 @@ public class GameManager : MonoBehaviour
 
 
     [System.Serializable]
-    public class GeneralData
+    public static class GeneralData
     {//全体セーブデータ
-        public string usersName = Environment.UserName;
-        public string playerName;
+        public static string usersName = Environment.UserName;
+        public static string playerName;
         public static int startCount;
     }
 
@@ -67,6 +67,7 @@ public class GameManager : MonoBehaviour
     }
 
     PlayerDataG myData = new PlayerDataG();
+    GeneralData genData = new GeneralData();
 
     //Group系
 
@@ -125,6 +126,20 @@ public class GameManager : MonoBehaviour
         writer.Close();
     }
 
+    public void SaveUserData()
+    {
+        StreamWriter writer;
+        var playerName = Environment.UserName;
+        genData.usersName = playerName;
+
+        string jsonstr = JsonUtility.ToJson(genData);
+
+        writer = new StreamWriter(Application.dataPath + "/save" + playerName + ".json", false);
+        writer.Write(jsonstr);
+        writer.Flush();
+        writer.Close();
+    }
+
     public void LoadPlayerData()
     {
         string datastr = "";
@@ -139,6 +154,20 @@ public class GameManager : MonoBehaviour
         Debug.Log(myData.playerName + "のデータをロードしました");
         counterText.text = myData.clickCount.ToString();
         coinsText.text = "coins: " + myData.coins.ToString();
+    }
+
+    public void LoadUsersData()
+    {
+        string datastr = "";
+        var playerName = Environment.UserName;
+        StreamReader reader;
+
+        reader = new StreamReader(Application.dataPath + "/save" + playerName + ".json");
+        datastr = reader.ReadToEnd();
+        reader.Close();
+
+        myData = JsonUtility.FromJson<PlayerDataG>(datastr); // ロードしたデータで上書き
+        Debug.Log(genData.usersName + "のデータをロードしました");
     }
 
 
@@ -306,9 +335,12 @@ public class GameManager : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Initialize()
     {
+        var gene = new GeneralData();
         //起動したときだけ発生するイベント
+        //gene.LoadUsersData(); //なぜできないのかわからない
         GeneralData.startCount++;
         Debug.Log("起動確認: 起動カウント" +GeneralData.startCount);
+
         //起動カウントはセーブデータごとではなく実機ごとにしようかな…？
     }
 

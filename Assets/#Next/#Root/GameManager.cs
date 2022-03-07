@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,6 +29,15 @@ public class GameManager : MonoBehaviour
 
 
     [System.Serializable]
+    public class GeneralData
+    {//全体セーブデータ
+        public string usersName = Environment.UserName;
+        public string playerName;
+        public static int startCount;
+    }
+
+
+    [System.Serializable]
     public class PlayerDataG
     {//ここに置かれているデータが保存されます
         public int clickCount;
@@ -54,8 +64,6 @@ public class GameManager : MonoBehaviour
         public int hsX4_1;
 
         public int hsX5;
-
-        public static int startCount; 
     }
 
     PlayerDataG myData = new PlayerDataG();
@@ -63,7 +71,7 @@ public class GameManager : MonoBehaviour
     //Group系
 
     public GameObject lessonGroup;
-        public GameObject createWithUnityGroup;
+        public GameObject createWithCodeGroup;
         public GameObject otherGroup;
 
     //Group系　ココマデ
@@ -78,7 +86,7 @@ public class GameManager : MonoBehaviour
     //全体系
 
     public void debuglogsiro()
-    {  Debug.Log("?????????????"); }
+    { Debug.Log("?????????????"); }
 
     public void OnClickEvent()
     {
@@ -165,7 +173,7 @@ public class GameManager : MonoBehaviour
 
     //CreateWithCode系
 
-            public void LoadPrototypes(int num) { SceneManager.LoadScene("Prototype " + num); }
+
 
             public void ChangeAvaterNumU3(int num)
             {
@@ -184,6 +192,8 @@ public class GameManager : MonoBehaviour
                 
             }
 
+            public void LoadPrototypes(int num) { SceneManager.LoadScene("Prototype " + num); }
+    /*
             public void LoadPrototype1() { SceneManager.LoadScene("Prototype 1"); }
 
             public void LoadPrototype2() { SceneManager.LoadScene("Prototype 2"); }
@@ -193,6 +203,10 @@ public class GameManager : MonoBehaviour
             public void LoadPrototype4() { SceneManager.LoadScene("Prototype 4"); }
 
             public void LoadPrototype5() { SceneManager.LoadScene("Prototype 5"); }
+    */
+
+            public void LoadChallenges(int num) { SceneManager.LoadScene("Challenge " + num); }
+    /*
 
             public void LoadChallenge1() { SceneManager.LoadScene("Challenge 1"); }
 
@@ -203,7 +217,11 @@ public class GameManager : MonoBehaviour
             public void LoadChallenge4() { SceneManager.LoadScene("Challenge 4"); }
 
             public void LoadChallenge5() { SceneManager.LoadScene("Challenge 5"); }
+    */
 
+            public void LoadTitles(int num) { SceneManager.LoadScene("Title" + num); }
+
+    /*
             public void LoadTitle1() { SceneManager.LoadScene("Title1"); }
 
             public void LoadTitle2() { SceneManager.LoadScene("Title2"); }
@@ -213,6 +231,7 @@ public class GameManager : MonoBehaviour
             public void LoadTitle4() { SceneManager.LoadScene("Title4"); }
 
             public void LoadTitle5() { SceneManager.LoadScene("Title5"); }
+    */
 
         //CreateWithCode系 ココマデ
 
@@ -236,20 +255,31 @@ public class GameManager : MonoBehaviour
 
             public void LoadAsobi02() { SceneManager.LoadScene("Asobi02"); }
 
-
+    /*
             public void SetActiveLessonGroup() { lessonGroup.SetActive(true); }
             public void SetDisActiveLessonGroup() { lessonGroup.SetActive(false); }
+    */
 
-            public void SetActiveCreateWithUnityGroup() { createWithUnityGroup.SetActive(true); }
-            public void SetDisActiveCreateWithUnityGroup() { createWithUnityGroup.SetActive(false); }
+            public void SetLessonGroup(bool OnOff) { lessonGroup.SetActive(OnOff); }
 
+    /*
+            public void SetActiveCreateWithUnityGroup() { createWithCodeGroup.SetActive(true); }
+            public void SetDisActiveCreateWithUnityGroup() { createWithCodeGroup.SetActive(false); }
+    */
+
+            public void SetCreateWithCodeGroup(bool OnOff) { createWithCodeGroup.SetActive(OnOff); }
+
+
+    /*
             public void SetActiveOtherGroup() { otherGroup.SetActive(true); }
             public void SetDisActiveOtherGroup() { otherGroup.SetActive(false); }
+    */
+    public void SetOtherGroup(bool OnOff) { otherGroup.SetActive(OnOff); }
 
 
-        //授業成果系　ココマデ
+    //授業成果系　ココマデ
 
-        //個人系
+    //個人系
 
     public void LoadGameSelect() { SceneManager.LoadScene("GameSelect"); }
 
@@ -277,8 +307,8 @@ public class GameManager : MonoBehaviour
     private static void Initialize()
     {
         //起動したときだけ発生するイベント
-        kidouCount++;
-        Debug.Log("起動確認: 起動カウント" + kidouCount);
+        GeneralData.startCount++;
+        Debug.Log("起動確認: 起動カウント" +GeneralData.startCount);
         //起動カウントはセーブデータごとではなく実機ごとにしようかな…？
     }
 

@@ -401,7 +401,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: LoadSection5_2
+        m_MethodName: LoadGaleemKarinScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -461,7 +461,7 @@ GameObject:
   - component: {fileID: 198136332}
   - component: {fileID: 198136331}
   m_Layer: 5
-  m_Name: CreateWithUnity
+  m_Name: CreateWithCode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -531,15 +531,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: SetActiveCreateWithUnityGroup
-        m_Mode: 1
+        m_MethodName: SetCreateWithCodeGroup
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &198136332
 MonoBehaviour:
@@ -774,8 +774,16 @@ MonoBehaviour:
   inputArea: {fileID: 0}
   counterText: {fileID: 0}
   SecletOpen: 0
+  pauseUI: {fileID: 0}
+  coinsText: {fileID: 0}
+  series3List: []
+  series3avaterText: {fileID: 0}
+  series3VariationText: {fileID: 0}
+  scoreU1Text: {fileID: 0}
+  highscoreU1Text: {fileID: 0}
+  inGameMode: 0
   lessonGroup: {fileID: 732202315}
-  createWithUnityGroup: {fileID: 602073519}
+  createWithCodeGroup: {fileID: 0}
   otherGroup: {fileID: 1736977663}
 --- !u!1 &294412589
 GameObject:
@@ -1002,7 +1010,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CreateWithUnity
+  m_Text: CreateWithCode
 --- !u!222 &330758593
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1094,12 +1102,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: LoadTitle1
-        m_Mode: 1
+        m_MethodName: LoadTitles
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1510,8 +1518,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: SetDisActiveOtherGroup
-        m_Mode: 1
+        m_MethodName: SetOtherGroup
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1729,12 +1737,12 @@ GameObject:
   m_Component:
   - component: {fileID: 602073520}
   m_Layer: 0
-  m_Name: CreateWithUnityGroup
+  m_Name: CreateWithCodeGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &602073520
 Transform:
   m_ObjectHideFlags: 0
@@ -1842,12 +1850,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: LoadTitle3
-        m_Mode: 1
+        m_MethodName: LoadTitles
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2073,7 +2081,9 @@ MonoBehaviour:
 
     CreateWith
 
-    Unity'
+    Code
+
+'
 --- !u!222 &756369098
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3119,8 +3129,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: SetDisActiveCreateWithUnityGroup
-        m_Mode: 1
+        m_MethodName: SetCreateWithCodeGroup
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3249,12 +3259,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: LoadTitle5
-        m_Mode: 1
+        m_MethodName: LoadTitles
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3457,7 +3467,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: LoadSection5_2
+        m_MethodName: LoadJsonClicker
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3827,12 +3837,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: LoadTitle4
-        m_Mode: 1
+        m_MethodName: LoadTitles
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4105,12 +4115,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: LoadTitle2
-        m_Mode: 1
+        m_MethodName: LoadTitles
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4514,7 +4524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1736977664
 Transform:
   m_ObjectHideFlags: 0
@@ -4990,15 +5000,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: SetActiveOtherGroup
-        m_Mode: 1
+        m_MethodName: SetOtherGroup
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1895764284
 MonoBehaviour:
@@ -5120,8 +5130,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: SetDisActiveLessonGroup
-        m_Mode: 1
+        m_MethodName: SetLessonGroup
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5342,15 +5352,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293579823}
-        m_MethodName: SetActiveLessonGroup
-        m_Mode: 1
+        m_MethodName: SetLessonGroup
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1993971105
 MonoBehaviour:

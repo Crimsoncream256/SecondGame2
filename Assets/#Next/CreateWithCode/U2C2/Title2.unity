@@ -444,12 +444,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 712760541}
-        m_MethodName: LoadChallenge2
-        m_Mode: 1
+        m_MethodName: LoadChallenges
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -700,8 +700,16 @@ MonoBehaviour:
   inputArea: {fileID: 0}
   counterText: {fileID: 0}
   SecletOpen: 0
+  pauseUI: {fileID: 0}
+  coinsText: {fileID: 0}
+  series3List: []
+  series3avaterText: {fileID: 0}
+  series3VariationText: {fileID: 0}
+  scoreU1Text: {fileID: 0}
+  highscoreU1Text: {fileID: 0}
+  inGameMode: 0
   lessonGroup: {fileID: 0}
-  createWithUnityGroup: {fileID: 0}
+  createWithCodeGroup: {fileID: 0}
   otherGroup: {fileID: 0}
 --- !u!114 &712760542
 MonoBehaviour:
@@ -905,12 +913,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 712760541}
-        m_MethodName: LoadPrototype2
-        m_Mode: 1
+        m_MethodName: LoadPrototypes
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

@@ -305,9 +305,11 @@ MonoBehaviour:
   series3List: []
   series3avaterText: {fileID: 1643092838}
   series3VariationText: {fileID: 1670066335}
+  scoreU1Text: {fileID: 0}
+  highscoreU1Text: {fileID: 0}
   inGameMode: 0
   lessonGroup: {fileID: 0}
-  createWithUnityGroup: {fileID: 0}
+  createWithCodeGroup: {fileID: 0}
   otherGroup: {fileID: 0}
 --- !u!114 &222199995
 MonoBehaviour:
@@ -2020,12 +2022,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 222199994}
-        m_MethodName: LoadChallenge3
-        m_Mode: 1
+        m_MethodName: LoadChallenges
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

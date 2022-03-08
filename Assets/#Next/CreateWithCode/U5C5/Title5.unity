@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: e1e0f5e622c100a48a7dbc1a543bb162,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -299,6 +300,7 @@ MonoBehaviour:
   series3VariationText: {fileID: 0}
   scoreU1Text: {fileID: 0}
   highscoreU1Text: {fileID: 0}
+  noticeforNoUsers: {fileID: 0}
   inGameMode: 0
   lessonGroup: {fileID: 0}
   createWithCodeGroup: {fileID: 0}
@@ -1221,7 +1223,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1410670107
 Transform:

@@ -9,11 +9,14 @@ public class GoalUI : MonoBehaviour
     public Text textLose;
     private bool gameOn;
 
+    public GameObject nextBu;
+
     void Start()
     {
         goalText.enabled = false;
         textLose.enabled = false;
         gameOn = true;
+        nextBu.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,6 +33,7 @@ public class GoalUI : MonoBehaviour
             GameObject.Find("Player").GetComponent<PlayerController1130>().goalOn = true;
             goalText.enabled = true;
             gameOn = false;
+            nextBu.SetActive(true);
         }
     }
 

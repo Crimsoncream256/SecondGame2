@@ -10,6 +10,8 @@ public class PlayerController1130: MonoBehaviour
     public Text failText;
     public Text makeOshimiText;
 
+
+
     public bool goalOn;
     public float speed = 2.0f;
     public float brake = 0.5f;

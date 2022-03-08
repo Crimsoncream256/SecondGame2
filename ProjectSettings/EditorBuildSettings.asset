@@ -63,12 +63,6 @@ EditorBuildSettings:
     path: Assets/#Next/JsonClicker/JsonClicker.unity
     guid: 461d6c45969c82b4bab93e7999efee64
   - enabled: 1
-    path: Assets/#Next/GaleemKarinF/Scenes/KidScene.unity
-    guid: e221f041637a6db458e584448ab5f584
-  - enabled: 1
-    path: Assets/#Next/GaleemKarinF/Scenes/KouHakuOniScene.unity
-    guid: a69c9884ecb8ad24080ddc42774d5cda
-  - enabled: 1
     path: Assets/#Next/20210427/Scenes/Main.unity
     guid: 163adec682b5ccd4c8dbb7766c20f3fb
   - enabled: 1

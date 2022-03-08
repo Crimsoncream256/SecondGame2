@@ -7,13 +7,14 @@ public class PlayerControllerX2 : MonoBehaviour
 {
     public GameObject dogPrefab;
 
-    private float leftTime;
+    public float leftTime;
     public Text textTimer;
 
     public int Tamakazu;
     public int DefaultTamakazu = 3;
     GameObject[] tagObjects;
     public bool isGameActive;
+    public GameObject resultPanel;
 
     public void check(string tagname)
     {
@@ -55,12 +56,15 @@ public class PlayerControllerX2 : MonoBehaviour
 
     public void StartGame(int difficulty)
     {
+        resultPanel.SetActive(false);
         isGameActive = true;
         DefaultTamakazu = difficulty;
         Tamakazu = DefaultTamakazu;
         Debug.Log("ﾅﾝｲﾄﾞﾊ"+difficulty);
-        leftTime = 100f;
+        //leftTime = 100f;
     }
+
+
 
 
     void Start()
@@ -70,29 +74,38 @@ public class PlayerControllerX2 : MonoBehaviour
 
     void Update()
     {
-        tagObjects = GameObject.FindGameObjectsWithTag("Dog");
-        //Debug.Log(tagObjects.Length);
-
-        leftTime -= Time.deltaTime;
-        textTimer.text = "Time:" + (leftTime > 0f ? leftTime.ToString("0.00") : "0.00");
-
-        // On spacebar press, send dog
-
-        //Dogタグ付きのわんこは、画面内にいる数がDefaultTamakazuより少なければ召喚できる　　if(tagObjects.Length < DefaultTamakazu){わんこ召喚}
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (isGameActive)
         {
-            checkDoggy("Dog");
-
             tagObjects = GameObject.FindGameObjectsWithTag("Dog");
-            if (tagObjects.Length + 1 <= DefaultTamakazu)//わんこ <= 5つ
+            //Debug.Log(tagObjects.Length);
+
+            leftTime -= Time.deltaTime;
+            textTimer.text = "Time:" + (leftTime > 0f ? leftTime.ToString("0.00") : "0.00");
+
+            if (leftTime == 0)
             {
-                Debug.Log("true");
-                Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);
+                resultPanel.SetActive(true);
+                isGameActive = false;
             }
-            else if (tagObjects.Length > DefaultTamakazu)
+
+            // On spacebar press, send dog
+
+            //Dogタグ付きのわんこは、画面内にいる数がDefaultTamakazuより少なければ召喚できる　　if(tagObjects.Length < DefaultTamakazu){わんこ召喚}
+
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("わんこが多すぎます");
+                checkDoggy("Dog");
+
+                tagObjects = GameObject.FindGameObjectsWithTag("Dog");
+                if (tagObjects.Length + 1 <= DefaultTamakazu)//わんこ <= 5つ
+                {
+                    Debug.Log("true");
+                    Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);
+                }
+                else if (tagObjects.Length > DefaultTamakazu)
+                {
+                    Debug.Log("わんこが多すぎます");
+                }
             }
         }
     }

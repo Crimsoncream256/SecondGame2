@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 772a7ac23d899004ea8613822a58a805,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -707,6 +708,7 @@ MonoBehaviour:
   series3VariationText: {fileID: 0}
   scoreU1Text: {fileID: 0}
   highscoreU1Text: {fileID: 0}
+  noticeforNoUsers: {fileID: 0}
   inGameMode: 0
   lessonGroup: {fileID: 0}
   createWithCodeGroup: {fileID: 0}
@@ -1365,6 +1367,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7135642333853903641, guid: 72e61f412741e5f4abcac598dd0635ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7135642333854232277, guid: 72e61f412741e5f4abcac598dd0635ab,
         type: 3}
       propertyPath: m_RootOrder
@@ -1438,7 +1445,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1192376287
 Transform:
@@ -2197,6 +2204,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MountainSkybox1
       objectReference: {fileID: 0}
+    - target: {fileID: 7317731327648692240, guid: 5f0963a629b97442587b7f3ece766e42,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7317731328111405690, guid: 5f0963a629b97442587b7f3ece766e42,
         type: 3}
       propertyPath: m_RootOrder
@@ -2400,6 +2412,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Food
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135642333853903641, guid: 72e61f412741e5f4abcac598dd0635ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7135642333854232277, guid: 72e61f412741e5f4abcac598dd0635ab,
         type: 3}

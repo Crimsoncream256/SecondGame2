@@ -5,8 +5,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.IO;
-[System.Serializable]
 
+
+/*最低限済ませたいこと (いっそのこと色替えは消す/起動カウントの実装も消す)
+ * セーブデータの読み込み
+ * 各コイン値の設定
+ * コイン数表記
+ * 各シーンハイスコアの記憶
+ * 全ゲームシーンにポーズ画面の配置
+ * ポーズ画面/設定画面の回転速度変更タブ実装
+ * クレジット表記(使用Prefab、参考になったサイトを表記)
+ */
+
+[System.Serializable]
 public class GameManager : MonoBehaviour
 {
     [SerializeField] InputField inputArea;
@@ -24,16 +35,23 @@ public class GameManager : MonoBehaviour
     public Text scoreU1Text;
     public Text highscoreU1Text;
 
+    public Text noticeforNoUsers;
 
     public int inGameMode;
 
+    public static bool isstartCountAdded;
+
+
+    [SerializeField,Header("これがヘッダーの力…！")] string aroha;
+
 
     [System.Serializable]
-    public static class GeneralData
+    public class GeneralData
     {//全体セーブデータ
-        public static string usersName = Environment.UserName;
-        public static string playerName;
-        public static int startCount;
+        public string usersName = Environment.UserName;
+        public string playerName;
+        public int startCount;
+        public static bool isStartCountAdded;
     }
 
 
@@ -117,6 +135,7 @@ public class GameManager : MonoBehaviour
         StreamWriter writer;
         var playerName = inputArea.text;
         myData.playerName = playerName;
+        genData.playerName = playerName;
 
         string jsonstr = JsonUtility.ToJson(myData);
 
@@ -124,6 +143,7 @@ public class GameManager : MonoBehaviour
         writer.Write(jsonstr);
         writer.Flush();
         writer.Close();
+        //SaveUserData();
     }
 
     public void SaveUserData()
@@ -131,10 +151,12 @@ public class GameManager : MonoBehaviour
         StreamWriter writer;
         var playerName = Environment.UserName;
         genData.usersName = playerName;
+        genData.playerName = myData.playerName;
+        Debug.Log("マイデータプレイヤーネーム: " + genData.playerName);
 
         string jsonstr = JsonUtility.ToJson(genData);
 
-        writer = new StreamWriter(Application.dataPath + "/save" + playerName + ".json", false);
+        writer = new StreamWriter(Application.dataPath + "/saveuser" + playerName + ".json", false);
         writer.Write(jsonstr);
         writer.Flush();
         writer.Close();
@@ -156,18 +178,38 @@ public class GameManager : MonoBehaviour
         coinsText.text = "coins: " + myData.coins.ToString();
     }
 
-    public void LoadUsersData()
+    public void LoadPlayerDataUser(string user)
     {
         string datastr = "";
-        var playerName = Environment.UserName;
+        var playerName = user;
+        Debug.Log(user);
         StreamReader reader;
 
-        reader = new StreamReader(Application.dataPath + "/save" + playerName + ".json");
+        reader = new StreamReader(Application.dataPath + "/save" + user + ".json");
         datastr = reader.ReadToEnd();
         reader.Close();
 
         myData = JsonUtility.FromJson<PlayerDataG>(datastr); // ロードしたデータで上書き
+        Debug.Log(myData.playerName + "のデータをロードしました");
+        counterText.text = myData.clickCount.ToString();
+        coinsText.text = "coins: " + myData.coins.ToString();
+    }
+
+    public void LoadUsersData()
+    {
+        string datastr = "";
+        var playerName = Environment.UserName;
+        
+        StreamReader reader;
+
+        reader = new StreamReader(Application.dataPath + "/saveuser" + playerName + ".json");
+        datastr = reader.ReadToEnd();
+        reader.Close();
+
+        genData = JsonUtility.FromJson<GeneralData>(datastr); // ロードしたデータで上書き
         Debug.Log(genData.usersName + "のデータをロードしました");
+        Debug.Log("データを読みます: " + genData.playerName);
+        LoadPlayerDataUser(genData.playerName);
     }
 
 
@@ -277,8 +319,15 @@ public class GameManager : MonoBehaviour
             public void LoadSection5_6Pinball() { SceneManager.LoadScene("Section5_6Pinball"); }
 
             public void LoadTitleandStages20211130() { SceneManager.LoadScene("TitleandStages20211130"); }
+    
+            public void LoadWithEnemies() { SceneManager.LoadScene("WithEnemies"); }
 
-            public void LoadFirstscene() { SceneManager.LoadScene("Firstscene"); }
+            public void LoadWithItems() { SceneManager.LoadScene("WithItems"); }
+
+            public void LoadWithRivals() { SceneManager.LoadScene("WithRivals"); }
+    
+
+    public void LoadFirstscene() { SceneManager.LoadScene("Firstscene"); }
 
             public void LoadBoss1() { SceneManager.LoadScene("Boss1"); }
 
@@ -332,14 +381,22 @@ public class GameManager : MonoBehaviour
 
     //LoadScene系　ココマデ
 
+
+
+
+
+
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Initialize()
     {
-        var gene = new GeneralData();
         //起動したときだけ発生するイベント
-        //gene.LoadUsersData(); //なぜできないのかわからない
-        GeneralData.startCount++;
-        Debug.Log("起動確認: 起動カウント" +GeneralData.startCount);
+
+        isstartCountAdded = false;
+        Debug.Log(isstartCountAdded);
+        GeneralData.isStartCountAdded = isstartCountAdded;
+        isstartCountAdded = GeneralData.isStartCountAdded;  
+
+
 
         //起動カウントはセーブデータごとではなく実機ごとにしようかな…？
     }
@@ -351,7 +408,54 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        //Debug.Log(GeneralData.isStartCountAdded +" "+ isstartCountAdded);
         debuglogsiro();
+
+
+
+        if (SceneManager.GetActiveScene().name == "TitleScene")
+        {
+            /*
+            Debug.Log(isstartCountAdded + "ですのです");
+
+            //SaveUserData();
+            LoadUsersData();
+            if (genData.startCount == 0)
+            {
+                Debug.Log("ようこそ: " + genData.startCount);
+                noticeforNoUsers.text = "初めて起動したときはこのボタンを押してください";
+                //SaveUserData();
+            }
+
+            //もうむり　2022/03/08
+
+            if (isstartCountAdded == false)
+            {
+                Debug.Log("にゃ");
+                int a = 1;
+                genData.startCount += a;
+                isstartCountAdded = true;
+                GeneralData.isStartCountAdded = isstartCountAdded;
+                Debug.Log(GeneralData.isStartCountAdded + " " + isstartCountAdded);
+                Debug.Log("起動確認: 起動カウント" + genData.startCount);
+            } else if (GeneralData.isStartCountAdded)
+            {
+                Debug.Log("起動カウント追加済み");
+            }
+            /*
+            StreamWriter writer;
+            var playerName = Environment.UserName;
+            Debug.Log("mydataPlayerName: " + myData.playerName);
+
+            string jsonstr = JsonUtility.ToJson(genData);
+
+            writer = new StreamWriter(Application.dataPath + "/saveuser" + playerName + ".json", false);
+            writer.Write(jsonstr);
+            writer.Flush();
+            writer.Close();
+            */
+        }
+
         if (SceneManager.GetActiveScene().name == "Section5_3Continue")
         {
             Debug.Log("wafadsc");

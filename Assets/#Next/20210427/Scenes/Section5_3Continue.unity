@@ -218,6 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b144fb8ed8421fc4cb32ba445b93577f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   PressedX: 0
   life: 0
   DefaultLife: 0
@@ -271,6 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8386924840f29ad49b71eef6d0053010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onOff: 0
   PressedX: 0
   XButton: {fileID: 567144735}
   audiO: {fileID: 0}

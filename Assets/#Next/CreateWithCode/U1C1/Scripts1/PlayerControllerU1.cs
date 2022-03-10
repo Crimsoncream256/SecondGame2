@@ -59,6 +59,8 @@ public class PlayerControllerU1 : MonoBehaviour
         {
             gm.Retry();
         }
+        else { }
+        
 
     }
 }

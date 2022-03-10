@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerControllerX3 : MonoBehaviour
 {
     public bool gameOver;
+    public GameManager gm;
 
     public float floatForce;
     private float gravityModifier = 1.5f;
@@ -66,6 +67,7 @@ public class PlayerControllerX3 : MonoBehaviour
             fireworksParticle.Play();
             playerAudio.PlayOneShot(moneySound, 1.0f);
             Destroy(other.gameObject);
+            gm.PlusCoins(5);
 
         }else if (other.gameObject.CompareTag("Ground") && !gameOver)
         {

@@ -774,7 +774,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 43f66d41c5142f342bbb06c93f1b9f49, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 1
@@ -2745,6 +2745,7 @@ MonoBehaviour:
   aroha: 
   lessonGroup: {fileID: 0}
   createWithCodeGroup: {fileID: 0}
+  creditsGroup: {fileID: 0}
   otherGroup: {fileID: 0}
 --- !u!4 &1093261678 stripped
 Transform:
@@ -5019,7 +5020,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 43f66d41c5142f342bbb06c93f1b9f49, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 1

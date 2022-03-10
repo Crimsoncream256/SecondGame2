@@ -12,9 +12,9 @@ using System.IO;
  * 各コイン値の設定
  * コイン数表記
  * 各シーンハイスコアの記憶
- * 全ゲームシーンにポーズ画面の配置
  * ポーズ画面/設定画面の回転速度変更タブ実装
- * クレジット表記(使用Prefab、参考になったサイトを表記)
+ * [ｵﾜﾘ]全ゲームシーンにポーズ画面の配置
+ * [ｵﾜﾘ]クレジット表記(使用Prefab、参考になったサイトを表記)
  */
 
 [System.Serializable]
@@ -328,7 +328,7 @@ public class GameManager : MonoBehaviour
             public void LoadWithRivals() { SceneManager.LoadScene("WithRivals"); }
     
 
-    public void LoadFirstscene() { SceneManager.LoadScene("Firstscene"); }
+            public void LoadFirstscene() { SceneManager.LoadScene("Firstscene"); }
 
             public void LoadBoss1() { SceneManager.LoadScene("Boss1"); }
 
@@ -487,7 +487,7 @@ public class GameManager : MonoBehaviour
     public void PlusCoins(int amount)
     {
         myData.coins += amount;
+        Debug.Log(myData.coins + "コインをゲット");
         coinsText.text = "coins: " + myData.coins.ToString();
-        Debug.Log(myData.coins+"コインをゲット");
     }
 }

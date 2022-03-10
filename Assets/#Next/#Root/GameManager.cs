@@ -492,9 +492,9 @@ public class GameManager : MonoBehaviour
             //照合したものを
         }
 
-        if (SceneManager.GetActiveScene().name == "Prototype 4")
+        if (SceneManager.GetActiveScene().name == "Title4")
         {
-            
+            highscoreU4Text.text = "ハイスコア: ";
         }
 
 

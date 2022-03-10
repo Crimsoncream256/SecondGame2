@@ -23,9 +23,9 @@ public class EnemyU4 : MonoBehaviour
         gm = GameObject.Find("GOD").GetComponent<GameManager>();
         player = GameObject.Find("Player");
         audio = gameObject.AddComponent<AudioSource>();
-        Slider slider = GameObject.Find("SeSlider").GetComponent<Slider>();
+        //Slider slider = GameObject.Find("SeSlider").GetComponent<Slider>();
 
-        slider.onValueChanged.AddListener(value => this.audio.volume = value);
+        //slider.onValueChanged.AddListener(value => this.audio.volume = value);
         enemyRb = GetComponent<Rigidbody>();
 
     }

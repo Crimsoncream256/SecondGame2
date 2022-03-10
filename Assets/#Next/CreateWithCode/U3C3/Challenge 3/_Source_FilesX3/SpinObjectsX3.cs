@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpinObjectsX : MonoBehaviour
+public class SpinObjectsX3 : MonoBehaviour
 {
     public float spinSpeed;
 

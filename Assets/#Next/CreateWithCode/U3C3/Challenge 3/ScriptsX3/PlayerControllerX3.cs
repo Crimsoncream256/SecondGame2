@@ -23,7 +23,7 @@ public class PlayerControllerX3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Physics.gravity *= gravityModifier;
+        //Physics.gravity *= gravityModifier;  //こいつはSceneReloadつきのプロジェクトには向かなかったようだな。さようなら。
         playerAudio = GetComponent<AudioSource>();
         playerRb = GetComponent<Rigidbody>();
 

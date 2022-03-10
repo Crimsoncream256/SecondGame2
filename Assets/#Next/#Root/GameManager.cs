@@ -406,11 +406,14 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        
+        Time.timeScale = 1f;
     }
 
     void Start()
     {
+        Time.timeScale = 1f;
+        Debug.Log("タイムスケール: " + Time.timeScale);
+
         //Debug.Log(GeneralData.isStartCountAdded +" "+ isstartCountAdded);
         debuglogsiro();
 
@@ -473,7 +476,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         isRPressed();
         if (Input.GetButtonDown("Pause"))

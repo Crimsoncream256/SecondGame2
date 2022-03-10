@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpawnManagerU4 : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public GameObject powerupPrefab;
-    
+    [SerializeField] private Text waveAmount;
+    [SerializeField] private GameManager gm;
+    [SerializeField] private Text HighScore;
+
+
     private float spawnRange = 9;
 
     public int enemyCount;
@@ -16,8 +21,10 @@ public class SpawnManagerU4 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        waveAmount.text = "生き残りウェーブ数: " + waveNumber.ToString();
         SpawnEnemyWave(waveNumber);
         Instantiate(powerupPrefab, GenerateSpawnPosition(), powerupPrefab.transform.rotation);
+        gm.setU4Highscore(HighScore);
     }
 
     private Vector3 GenerateSpawnPosition()
@@ -40,8 +47,9 @@ public class SpawnManagerU4 : MonoBehaviour
     void Update()
     {
         enemyCount = FindObjectsOfType<EnemyU4>().Length;
-        if(enemyCount == 0)
+        if(enemyCount == 0 && !(gm.inGameMode == -1))
         {
+            waveAmount.text = "生き残りウェーブ数: " + waveNumber.ToString();
             waveNumber++;
             SpawnEnemyWave(waveNumber);
             Instantiate(powerupPrefab, GenerateSpawnPosition(), powerupPrefab.transform.rotation);

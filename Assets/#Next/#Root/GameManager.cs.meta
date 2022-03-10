@@ -3,7 +3,25 @@ guid: 765c616cd659b614a85f65b5608d8d10
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - s4: {instanceID: 0}
+  - inputArea: {instanceID: 0}
+  - counterText: {instanceID: 0}
+  - pauseUI: {instanceID: 0}
+  - coinsText: {instanceID: 0}
+  - series3avaterText: {instanceID: 0}
+  - series3VariationText: {instanceID: 0}
+  - scoreU1Text: {instanceID: 0}
+  - highscoreU1Text: {instanceID: 0}
+  - highscoreU4Text: {instanceID: 0}
+  - noticeforNoUsers: {instanceID: 0}
+  - audio: {instanceID: 0}
+  - slider: {instanceID: 0}
+  - cheers: {fileID: 8300000, guid: ec7206fbbeab9f247bbb2f28caeab140, type: 3}
+  - lessonGroup: {instanceID: 0}
+  - createWithCodeGroup: {instanceID: 0}
+  - creditsGroup: {instanceID: 0}
+  - otherGroup: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

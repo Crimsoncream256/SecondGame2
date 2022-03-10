@@ -21,6 +21,8 @@ using System.IO;
 [System.Serializable]
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private SpawnManagerU4 s4;
+
     public int coinsAll;
 
     [SerializeField] InputField inputArea;
@@ -37,12 +39,18 @@ public class GameManager : MonoBehaviour
 
     public Text scoreU1Text;
     public Text highscoreU1Text;
+    public Text highscoreU4Text;
 
     public Text noticeforNoUsers;
 
     public int inGameMode;
+    [SerializeField] private bool isHighscoreOver;
 
     public static bool isstartCountAdded;
+
+    [SerializeField] private AudioSource audio;
+    public Slider slider;
+    [SerializeField] private AudioClip cheers;
 
 
     [SerializeField,Header("これがヘッダーの力…！")] string aroha;
@@ -147,7 +155,23 @@ public class GameManager : MonoBehaviour
         writer.Write(jsonstr);
         writer.Flush();
         writer.Close();
-        //SaveUserData();
+        SaveUserData();
+    }
+
+    public void SavePlayerData2()
+    {
+        StreamWriter writer;
+        var playerName = genData.playerName;
+        myData.playerName = playerName;
+        genData.playerName = playerName;
+
+        string jsonstr = JsonUtility.ToJson(myData);
+
+        writer = new StreamWriter(Application.dataPath + "/save" + playerName + ".json", false);
+        writer.Write(jsonstr);
+        writer.Flush();
+        writer.Close();
+        SaveUserData();
     }
 
     public void SaveUserData()
@@ -201,6 +225,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadUsersData()
     {
+        Debug.Log("a");
         string datastr = "";
         var playerName = Environment.UserName;
         
@@ -249,6 +274,20 @@ public class GameManager : MonoBehaviour
     //CreateWithCode系
 
 
+    public void U4HighScore(int U4)
+    {
+        if(U4 > myData.hsU4)
+        {
+            myData.hsU4 = U4;
+            SavePlayerData2();
+        }
+    }
+
+    public void setU4Highscore(Text U4)
+    {
+        U4.text = "ハイスコア: " + myData.hsU4;
+    }
+
 
             public void ChangeAvaterNumU3(int num)
             {
@@ -268,45 +307,11 @@ public class GameManager : MonoBehaviour
             }
 
             public void LoadPrototypes(int num) { SceneManager.LoadScene("Prototype " + num); }
-    /*
-            public void LoadPrototype1() { SceneManager.LoadScene("Prototype 1"); }
-
-            public void LoadPrototype2() { SceneManager.LoadScene("Prototype 2"); }
-
-            public void LoadPrototype3() { SceneManager.LoadScene("Prototype 3"); }
-
-            public void LoadPrototype4() { SceneManager.LoadScene("Prototype 4"); }
-
-            public void LoadPrototype5() { SceneManager.LoadScene("Prototype 5"); }
-    */
 
             public void LoadChallenges(int num) { SceneManager.LoadScene("Challenge " + num); }
-    /*
-
-            public void LoadChallenge1() { SceneManager.LoadScene("Challenge 1"); }
-
-            public void LoadChallenge2()  { SceneManager.LoadScene("Challenge 2"); }
-
-            public void LoadChallenge3()  { SceneManager.LoadScene("Challenge 3"); }
-
-            public void LoadChallenge4() { SceneManager.LoadScene("Challenge 4"); }
-
-            public void LoadChallenge5() { SceneManager.LoadScene("Challenge 5"); }
-    */
 
             public void LoadTitles(int num) { SceneManager.LoadScene("Title" + num); }
 
-    /*
-            public void LoadTitle1() { SceneManager.LoadScene("Title1"); }
-
-            public void LoadTitle2() { SceneManager.LoadScene("Title2"); }
-
-            public void LoadTitle3() { SceneManager.LoadScene("Title3"); }
-
-            public void LoadTitle4() { SceneManager.LoadScene("Title4"); }
-
-            public void LoadTitle5() { SceneManager.LoadScene("Title5"); }
-    */
 
         //CreateWithCode系 ココマデ
 
@@ -385,6 +390,7 @@ public class GameManager : MonoBehaviour
 
 
 
+
     //個人系　ココマデ
 
     //LoadScene系　ココマデ
@@ -418,6 +424,11 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         Debug.Log("タイムスケール: " + Time.timeScale);
+        pauseUI.SetActive(false);
+        isHighscoreOver = false;
+        audio = gameObject.AddComponent<AudioSource>();
+        slider.onValueChanged.AddListener(value => this.audio.volume = value);
+        LoadUsersData();
 
         //Debug.Log(GeneralData.isStartCountAdded +" "+ isstartCountAdded);
         debuglogsiro();
@@ -426,6 +437,7 @@ public class GameManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "TitleScene")
         {
+
             /*
             Debug.Log(isstartCountAdded + "ですのです");
 
@@ -471,7 +483,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("wafadsc");
         }
-        pauseUI.SetActive(false);
+
 
         if (SceneManager.GetActiveScene().name == "Prototype 3")
         { 
@@ -479,6 +491,13 @@ public class GameManager : MonoBehaviour
             //バリエーション番号をむこうで照合
             //照合したものを
         }
+
+        if (SceneManager.GetActiveScene().name == "Prototype 4")
+        {
+            
+        }
+
+
     }
 
     void Update()
@@ -488,6 +507,17 @@ public class GameManager : MonoBehaviour
         {
             PauseFaction();
         }
+
+        if (SceneManager.GetActiveScene().name == "Prototype 4")
+        {
+            if (myData.hsU4 < s4.waveNumber && !(isHighscoreOver))
+            {
+                audio.PlayOneShot(cheers);
+                Debug.Log("ｵﾒﾃﾞﾄｰ!!!!!!!!!!!!!!!!!!!!!!!!!");
+                isHighscoreOver = true;
+            }
+        }
+
     }
     public void PlusCoins(int amount)
     {

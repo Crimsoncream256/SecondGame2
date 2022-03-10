@@ -1,22 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyU4 : MonoBehaviour
 {
-    public GameManager gm;
+    [SerializeField] private GameManager gm;
     
     public float speed;
     public Rigidbody enemyRb;
     private GameObject player;
 
-    
+    [SerializeField] private AudioSource audio;
+    [SerializeField] private Slider slider;
+    [SerializeField] private AudioClip slip;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        enemyRb = GetComponent<Rigidbody>();
+        gm = GameObject.Find("GOD").GetComponent<GameManager>();
         player = GameObject.Find("Player");
+        audio = gameObject.AddComponent<AudioSource>();
+        Slider slider = GameObject.Find("SeSlider").GetComponent<Slider>();
+
+        slider.onValueChanged.AddListener(value => this.audio.volume = value);
+        enemyRb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
@@ -29,6 +40,14 @@ public class EnemyU4 : MonoBehaviour
         {
             gm.PlusCoins(5);
             Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            audio.PlayOneShot(slip);
         }
     }
 }

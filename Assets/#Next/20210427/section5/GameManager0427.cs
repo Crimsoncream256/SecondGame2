@@ -63,6 +63,7 @@ public class GameManager0427 : MonoBehaviour
     public AudioClip overSound;
     public AudioClip killSound;
     public AudioClip clearSound;
+    public Slider slider;
 
 
 
@@ -95,6 +96,8 @@ public class GameManager0427 : MonoBehaviour
     //最初の設定
     void Start()
     {
+        slider.onValueChanged.AddListener(value => audioSource.volume = value);
+
         //値設定
         score = 0;
         Kidoued += 1;

@@ -6,18 +6,27 @@ using UnityEngine.UI;
 public class WhenClicked : MonoBehaviour
 {
     private AudioSource audio;
-    public AudioClip Meow;
+    //public AudioClip Meow;
+
+    public AudioClip Pop;
 
     private Text C_text;
 
     public GameObject Sphere;
+    public Slider slider;
+
     // Start is called before the first frame update
     void Start()
     {
+
         audio = gameObject.AddComponent<AudioSource>();
-        audio.PlayOneShot(Meow); 
+        /*
+audio.PlayOneShot(Meow); 
+*/
         this.C_text = GameObject.Find("Getthecrown").GetComponent<Text>(); // textコンポーネントを取得
         C_text.text = "カベをこわして、おうかんをてにいれよう！";
+        slider.onValueChanged.AddListener(value => this.audio.volume = value);
+
     }
 
     // Update is called once per frame
@@ -31,6 +40,8 @@ public class WhenClicked : MonoBehaviour
 
             //オブジェクトを生産
             Instantiate(Sphere, new Vector3(x, y, z), Quaternion.identity);
+            audio.PlayOneShot(Pop);
+
         }
     }
 }

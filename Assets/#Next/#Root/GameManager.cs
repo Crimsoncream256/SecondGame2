@@ -15,18 +15,21 @@ using System.IO;
  * ポーズ画面/設定画面の回転速度変更タブ実装
  * [ｵﾜﾘ]全ゲームシーンにポーズ画面の配置
  * [ｵﾜﾘ]クレジット表記(使用Prefab、参考になったサイトを表記)
+ * [進行中]SEManagerの全適用
  */
 
 [System.Serializable]
 public class GameManager : MonoBehaviour
 {
+    public int coinsAll;
+
     [SerializeField] InputField inputArea;
     [SerializeField] Text counterText;
     [SerializeField] bool SecletOpen;
     [SerializeField] static int kidouCount;
 
     [SerializeField] private GameObject pauseUI;
-    [SerializeField] private Text coinsText;
+    public Text coinsText;
 
     public List<GameObject> series3List;
     public Text series3avaterText;
@@ -330,7 +333,9 @@ public class GameManager : MonoBehaviour
 
             public void LoadFirstscene() { SceneManager.LoadScene("Firstscene"); }
 
-            public void LoadBoss1() { SceneManager.LoadScene("Boss1"); }
+    public void LoadSecondscene() { SceneManager.LoadScene("Secondscene"); }
+
+    public void LoadBoss1() { SceneManager.LoadScene("Boss1"); }
 
             public void LoadAsobi02() { SceneManager.LoadScene("Asobi02"); }
 
@@ -489,5 +494,19 @@ public class GameManager : MonoBehaviour
         myData.coins += amount;
         Debug.Log(myData.coins + "コインをゲット");
         coinsText.text = "coins: " + myData.coins.ToString();
+    }
+
+    public void PlusCoinsInGame(int amount)
+    {
+        coinsAll += amount;
+        Debug.Log(coinsAll + "コインをゲット");
+    }
+
+    public void PlusCoinsAll()
+    {
+        myData.coins += coinsAll;
+        Debug.Log(coinsAll+"コインをゲット");
+        Debug.Log(myData.coins + "コイン");
+        coinsAll = 0;
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Broken_Oukan : MonoBehaviour
 {
-
+    public GameManager gm;
 
     void Start()
     {
@@ -14,7 +14,7 @@ public class Broken_Oukan : MonoBehaviour
     {
         if (other.gameObject.tag == "Ball")
         {
-
+            gm.PlusCoins(100);
             Destroy(gameObject);
         }
     }

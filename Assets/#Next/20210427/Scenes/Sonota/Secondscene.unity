@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 503fec73f685c02428225df1bd4100a1,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -132,6 +133,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -188,8 +194,107 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
+--- !u!1001 &35230735
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8402362406096985330, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542557}
+    - target: {fileID: 8402362406096985332, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985332, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985332, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ebf25dfdfd5ba94d955029e3d9ad250, type: 3}
+    - target: {fileID: 8402362406096985333, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985333, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 603.2264
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985333, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985333, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.99238044
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985333, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985333, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985333, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985333, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985333, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985333, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985333, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402362406096985335, guid: 485d19180d7df5b4eac9209b2534c366,
+        type: 3}
+      propertyPath: m_Name
+      value: BgmManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 485d19180d7df5b4eac9209b2534c366, type: 3}
 --- !u!1001 &44955691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -201,6 +306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -257,6 +367,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &83289957
@@ -270,6 +390,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -326,8 +451,118 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
+--- !u!1 &151478769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151478773}
+  - component: {fileID: 151478772}
+  - component: {fileID: 151478771}
+  - component: {fileID: 151478770}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &151478770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151478769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &151478771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151478769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &151478772
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151478769}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &151478773
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151478769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1027542554}
+  - {fileID: 1819518433}
+  m_Father: {fileID: 0}
+  m_RootOrder: 56
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &265001902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -339,6 +574,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -395,6 +635,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &324815137
@@ -414,7 +664,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &324815138
 BoxCollider:
@@ -502,6 +752,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -557,6 +812,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &409055755
@@ -570,6 +835,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -626,6 +896,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &427302856
@@ -718,6 +998,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -773,6 +1058,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &477781521
@@ -786,6 +1081,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -842,6 +1142,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &496970791
@@ -855,6 +1165,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -911,6 +1226,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &514009622
@@ -924,6 +1249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -980,6 +1310,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &562023630
@@ -999,7 +1339,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &562023632
 BoxCollider:
@@ -1087,6 +1427,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -1142,6 +1487,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &670176773
@@ -1155,6 +1510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -1211,6 +1571,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &709708343 stripped
@@ -1260,6 +1630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5980b212de5d4a4428557612b3aeb200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 1722423469}
 --- !u!1001 &831076997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1271,6 +1642,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -1327,6 +1703,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &842631816
@@ -1346,7 +1732,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &842631817
 BoxCollider:
@@ -1434,6 +1820,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -1489,6 +1880,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &923204198
@@ -1503,6 +1904,7 @@ GameObject:
   - component: {fileID: 923204200}
   - component: {fileID: 923204199}
   - component: {fileID: 923204202}
+  - component: {fileID: 923204203}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1587,8 +1989,105 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d43d8fb80e9d42840a1295e3d7ed694b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Meow: {fileID: 8300000, guid: 8ebf25dfdfd5ba94d955029e3d9ad250, type: 3}
+  Pop: {fileID: 8300000, guid: 5e5ada3073c056247a69200f6691aba9, type: 3}
   Sphere: {fileID: 8686866998619024936, guid: c43a244adb196704aa29822ca323b2ff, type: 3}
+  slider: {fileID: 1027542556}
+--- !u!82 &923204203
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923204198}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &935578592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1600,6 +2099,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -1656,6 +2160,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &951429554
@@ -1669,6 +2183,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -1725,6 +2244,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1026689181
@@ -1738,6 +2267,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -1794,8 +2328,288 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
+--- !u!1001 &1027542553
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 151478773}
+    m_Modifications:
+    - target: {fileID: 4269499507930564728, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499507930564728, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 4269499507930564728, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadTitleScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508001637783, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508115307555, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 4269499508115307555, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadGameSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508115307555, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508200554718, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 4269499508200554718, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseFaction
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310982, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_Name
+      value: Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508382650224, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508382650224, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 4269499508382650224, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadGameSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508851738599, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508880195605, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508880195605, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499508880195605, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499509231501964, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499509231501964, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499509231501964, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499509429686740, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499509429686740, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499509466006589, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269499509466006589, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5abdad03b77dbc54eb49cba9743ce4a1, type: 3}
+--- !u!224 &1027542554 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4269499508369310983, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1027542553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1027542555 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4269499508369310982, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1027542553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1027542556 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4269499509556856113, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1027542553}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1027542557 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4269499508151114360, guid: 5abdad03b77dbc54eb49cba9743ce4a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1027542553}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1028456824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,6 +2700,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -1941,8 +2760,92 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
+--- !u!1001 &1149475495
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3408363433600008566, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_Name
+      value: SeManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008568, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008568, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 603.2264
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008568, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 375
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008568, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.99238044
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008568, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008568, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008568, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008568, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008568, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008568, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008568, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408363433600008569, guid: 6b6f0ce646fc20b4cb02f020f82d5687,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b6f0ce646fc20b4cb02f020f82d5687, type: 3}
 --- !u!1001 &1190274450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1954,6 +2857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -2010,6 +2918,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &1242037447
@@ -2090,6 +3008,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -2145,6 +3068,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &1288333196
@@ -2165,7 +3098,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1288333197
 BoxCollider:
@@ -2265,6 +3198,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -2320,6 +3258,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1378537584
@@ -2433,6 +3381,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -2488,6 +3441,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1414370560
@@ -2501,6 +3464,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -2557,6 +3525,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1431732673
@@ -2570,6 +3548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -2626,6 +3609,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &1434826096
@@ -2732,6 +3725,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -2787,6 +3785,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &1484051481
@@ -2806,7 +3814,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1484051482
 BoxCollider:
@@ -2894,6 +3902,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -2949,6 +3962,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1581375789
@@ -2962,6 +3985,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -3018,6 +4046,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1638962499
@@ -3031,6 +4069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -3087,6 +4130,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1646915652
@@ -3100,6 +4153,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -3156,6 +4214,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1650854732
@@ -3169,6 +4237,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -3225,6 +4298,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1693019870
@@ -3238,6 +4321,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -3294,6 +4382,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1697514879
@@ -3307,6 +4405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -3363,8 +4466,79 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
+--- !u!1 &1722423468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722423470}
+  - component: {fileID: 1722423469}
+  m_Layer: 0
+  m_Name: GOD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1722423469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722423468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765c616cd659b614a85f65b5608d8d10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsAll: 0
+  inputArea: {fileID: 0}
+  counterText: {fileID: 0}
+  SecletOpen: 0
+  pauseUI: {fileID: 1027542555}
+  coinsText: {fileID: 1819518434}
+  series3List: []
+  series3avaterText: {fileID: 0}
+  series3VariationText: {fileID: 0}
+  scoreU1Text: {fileID: 0}
+  highscoreU1Text: {fileID: 0}
+  noticeforNoUsers: {fileID: 0}
+  inGameMode: 0
+  aroha: "\u30A2\u30ED\u30CF"
+  lessonGroup: {fileID: 0}
+  createWithCodeGroup: {fileID: 0}
+  creditsGroup: {fileID: 0}
+  otherGroup: {fileID: 0}
+--- !u!4 &1722423470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722423468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 55
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1761755825
 GameObject:
   m_ObjectHideFlags: 0
@@ -3382,7 +4556,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1761755826
 BoxCollider:
@@ -3470,6 +4644,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -3525,6 +4704,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &1816937851
@@ -3639,6 +4828,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -3694,8 +4888,96 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
+--- !u!1 &1819518432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1819518433}
+  - component: {fileID: 1819518435}
+  - component: {fileID: 1819518434}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1819518433
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819518432}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 151478773}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -412, y: 211}
+  m_SizeDelta: {x: 308.23523, y: 81.10004}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1819518434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819518432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 43f66d41c5142f342bbb06c93f1b9f49, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: coins
+--- !u!222 &1819518435
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819518432}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1839899601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3707,6 +4989,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -3763,6 +5050,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &1854436875
@@ -3782,7 +5079,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1854436876
 BoxCollider:
@@ -3870,6 +5167,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -3925,6 +5227,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1885418374
@@ -3938,6 +5250,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -3994,6 +5311,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &1903777865
@@ -4007,6 +5334,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -4063,6 +5395,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &1915327115
@@ -4187,6 +5529,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -4242,6 +5589,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1001 &2014672817
@@ -4255,6 +5612,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoroiKabe (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
@@ -4311,6 +5673,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}
 --- !u!1 &2030058267
@@ -4330,7 +5702,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &2030058268
 BoxCollider:
@@ -4418,6 +5790,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoroiKabe (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337028, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6290684943208337048, guid: e235fac5b2582b54f9095bf85b325f39,
         type: 3}
       propertyPath: m_RootOrder
@@ -4473,5 +5850,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1722423469}
+    - target: {fileID: 6290684943208337049, guid: e235fac5b2582b54f9095bf85b325f39,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1027542556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e235fac5b2582b54f9095bf85b325f39, type: 3}

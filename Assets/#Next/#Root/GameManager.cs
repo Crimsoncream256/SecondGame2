@@ -90,8 +90,9 @@ public class GameManager : MonoBehaviour
     //Group系
 
     public GameObject lessonGroup;
-        public GameObject createWithCodeGroup;
-        public GameObject otherGroup;
+    public GameObject createWithCodeGroup;
+    public GameObject creditsGroup;
+    public GameObject otherGroup;
 
     //Group系　ココマデ
 
@@ -346,6 +347,8 @@ public class GameManager : MonoBehaviour
     */
 
             public void SetCreateWithCodeGroup(bool OnOff) { createWithCodeGroup.SetActive(OnOff); }
+
+    public void SetCreditGroup(bool OnOff) { creditsGroup.SetActive(OnOff); }
 
 
     /*
